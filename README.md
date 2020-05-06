@@ -8,7 +8,7 @@
       <p><b>e-mail: yinghy203@163.com</b></p>
     </td>
     <td width="25%">
-      <img src="/zhengjianzhao.jpg" width="100%">      % insert picture
+      <img src="/ocean.png" width="100%">      % insert picture
     </td>
   </tr>
 </table>
