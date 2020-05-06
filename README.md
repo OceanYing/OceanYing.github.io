@@ -3,12 +3,12 @@
 <table border="0">
   <tr>
     <td width="75%">
-      <h3>OceanYing</h3>
+      <h2>OceanYing</h2>
       <p><b>undergraduate in SYSU</b></p>
       <p><b>interested in : Computer Vision, Machine Learning, Pattern Recognition</b></p>
     </td>
     <td width="25%">
-      <img src="/ocean.png" width="100%">      % insert picture
+      <img src="/ocean.png" width="100%">
     </td>
   </tr>
 </table>
