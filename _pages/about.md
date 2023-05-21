@@ -9,37 +9,43 @@ redirect_from:
 ---
 
 # About Me
-I'm a 1st-year Ph.D. student in computer science at Harvard University, advised by [Prof. Hanspeter Pfister](https://scholar.google.com/citations?user=VWX-GMAAAAAJ&hl=en) in [Visual Computing Group (VCG)](https://vcg.seas.harvard.edu/). I obtained my master's degree at Tsinghua University in 2022, advised by [Prof. Yang Li](http://yangli-feasibility.com/home/). Prior to that, I spent wonderful 4 years at Sichuan University in Chengdu and obtained my bachelor's degree in 2019. I've also been very fortunate to work with [Prof. Nir Shavit](https://people.csail.mit.edu/shanir/) at [MIT CSAIL](https://www.csail.mit.edu/), [Prof. Faisal Mahmood](https://faisal.ai/) at [Harvard Medical School](https://hms.harvard.edu/), and [Prof. Ercan Engin Kuruoglu](https://scholar.google.com/citations?user=To7e1toAAAAJ&hl=en&oi=ao) at [CNR-ISTI](https://www.isti.cnr.it/en/). My research interests are but not limited to:
-* **Biomedical Image Analysis**,
-* **AI for Healthcare**,
-* and **Computational Neuroscience**.
+I'm a 2nd-year M.Phil. student in Data Science and Information Technology at TBSI, Tsinghua University(THU), advised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU) in Guangzhou, advised by [Prof. Yulan Guo](https://scholar.google.com/citations?hl=zh-CN&user=WQRNvdsAAAAJ&view_op=list_works&sortby=pubdate) and obtained my bachelor's degree in 2021. My research interests are but not limited to:
+* **Semantic-aware 3D Reconstruction**
+* **3D Scene Parsing and Understdanding**
+* **Object-level SLAM**
+* **3D Scene Generation**
 
 Collaborations and casual chats are welcomed!
 
-<!-- <font color=red>I'm actively looking for a research intern position in summer 2023. Please shoot me an email if interested!</font> -->
+<font color=red>I'm actively looking for a research intern position in summer 2023. Please shoot me an email if interested!</font>
 
 
 
 # News
+<!--
 * [Feb. 2023] I'll serve as a reviewer for [**ICCV 2023**](https://iccv2023.thecvf.com/)!
 * [Jan. 2023] One paper accepted by [**ISBI 2023**](https://2023.biomedicalimaging.org/en/)!
 * [Nov. 2022] Two challenge proposals accepted by [**ISBI 2023**](https://2023.biomedicalimaging.org/en/)!
 * [Nov. 2022] I'll serve as a reviewer for [**CVPR 2023**](https://cvpr2023.thecvf.com/)!
-* [Oct. 2022] One paper accepted by [**BIBM 2022**](https://ieeebibm.org/BIBM2022/)!
+-->
+* [July. 2022] Our paper [**ParseMVS: Learning Primitive-aware Surface Representations for Sparse Multi-view Stereopsis**](https://dl.acm.org/doi/10.1145/3503161.3547920) was accepted by **ACM MM 2022**!
 
 # Honors & Awards
-* *2022*, Fellowship of Laverack Family Innovation Fund in the Division of Engineering and Applied Sciences, Harvard University.
-* *2021*, Comprehensive Excellence Scholarship, Tsinghua University.
-* *2018*, Excellent Graduate, Sichuan University.
-* *2018*, 2nd Prize, National English Competition for College Students, China.
-* *2017*, "Wang Wen Guo" Scholarship, Wu Yuzhang Honors College, Sichuan University.
+* *2021*, Excellent Graduate, Sun Yat-Sen University.
+* *2019, 2020*, National Scholarship, the Minister of Education, China.
+* *2018*, 1nd Prize, College Electronic Design Competition, Guangdong, China.
+* *2018, 2019, 2020*, Excellence Student the 1st-class Scholarship, Sun Yat-Sen University.
+* *2018*, AEON Scholarship, Sun Yat-Sen University.
 
+<!--
 # Academic Services
 * Reviewer: ICCV, CVPR, ICASSP, ICIP, EUSIPCO.
 * Volunteer: ICML, NeurIPS.
 * Membership: EURASIP, IEEE, IEEE SPS, IEEE YP, ACM.
+-->
 
 # Professional Experiences
+<!--
 * **Research Intern (Incoming), [Simons Foundation](https://www.simonsfoundation.org/), New York, USA.**  
 *Jun. 2023 - Aug. 2023*  
 Topic: Out-of-Domain Synapse Detection for Microwasp Brain Connectomes  
@@ -50,29 +56,19 @@ Mentor: [Dr. Jingpeng Wu](https://www.simonsfoundation.org/people/jingpeng-wu/) 
 Topic: Deep Learning for Pulmonary Function Diagnosis  
 Mentor: Changzheng Zhang.  
 Collaborators: Dr. Yimin Wang, Prof. Jinping Zheng, and [Prof. Nanshan Zhong](https://en.wikipedia.org/wiki/Zhong_Nanshan).
+-->
 
 # Teaching Experiences
-* ***Spring 2022*, Teaching Assistant, Tsinghua University.**  
-Course: Seminar in Data Science and Information Technology  
-Instructor: [Prof. Yang Li](http://yangli-feasibility.com/home/), Tsinghua University.
-
-* ***Summer 2021*, Teaching Assistant, Tsinghua University.**  
-Course: Geometry and Learning for 3D Vision  
-Instructor: [Prof. Yi Ma](http://people.eecs.berkeley.edu/~yima/), University of California, Berkeley.
-
-* ***Fall 2020*, Teaching Assistant, Tsinghua University.**  
-Course: Discrete-Event Simulation  
-Instructor: [Prof. Wai Kin (Victor) Chan](https://www.tbsi.edu.cn/cwj_en/main.htm), Tsinghua University.
-
+* ***Fall 2022*, Teaching Assistant, Tsinghua University.**  
+Course: Media and Cognition 
+Instructor: [Prof. Lu Fang](https://luvision.net), Tsinghua University.
 
 
 <!-- # Education
-* **Ph.D. Student, Computer Science**  
-*Aug. 2022 - Present*, Harvard University, USA.
 * **M.Phil., Data Science and Information Technology**  
-*Sept. 2019 - Jun. 2022*, Tsinghua University, China.
-* **B.Eng., Opto-Electronics Information Science and Engineering**  
-*Sept. 2015 - Jun. 2019*, Sichuan University, China. -->
+*Sept. 2021 - Present*, Tsinghua University, China.
+* **B.Eng., Electronic Information Science and Technology**  
+*Sept. 2017 - Jun. 2021*, Sun Yat-Sen University, China. -->
 
 
 <img src="../images/quotation_kobe.PNG" alt="quotation"/>
