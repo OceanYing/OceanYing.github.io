@@ -13,7 +13,7 @@ I'm a 2nd-year M.Phil. student in Data Science and Information Technology at TBS
 * **Semantic-aware 3D Reconstruction**
 * **3D Scene Parsing and Understdanding**
 * **Object-level SLAM**
-* **3D Scene Generation**
+<!-- * **3D Scene Generation** -->
 
 Collaborations and casual chats are welcomed!
 
