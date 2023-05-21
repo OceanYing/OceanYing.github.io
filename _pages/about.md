@@ -20,6 +20,12 @@ Collaborations and casual chats are welcomed!
 <font color=red>I'm actively looking for a research intern position in summer 2023. Please shoot me an email if interested!</font>
 
 
+# Education
+* **M.Phil., Data Science and Information Technology**  
+*Sept. 2021 - Present*, Tsinghua University, China.
+* **B.Eng., Electronic Information Science and Technology**  
+*Sept. 2017 - Jun. 2021*, Sun Yat-Sen University, China.
+
 
 # News
 <!--
@@ -29,6 +35,44 @@ Collaborations and casual chats are welcomed!
 * [Nov. 2022] I'll serve as a reviewer for [**CVPR 2023**](https://cvpr2023.thecvf.com/)!
 -->
 * [July. 2022] Our paper [**ParseMVS: Learning Primitive-aware Surface Representations for Sparse Multi-view Stereopsis**](https://dl.acm.org/doi/10.1145/3503161.3547920) was accepted by **ACM MM 2022**!
+
+
+# Research Experiences
+
+**Semantic-Aware Indoor Scene Reconstruction and Rendering**
+*Fall. 2017 – Spring. 2021**
+- Propose a semantic-aware hybrid representation for indoor scene modeling.
+- Design a framework for fast indoor scene reconstruction and rendering with RGB-D input.
+- Implement the proposed framework based on Instant-NGP to achieve higher-quality rendering.
+Mentor: [Prof. Lu Fang](https://luvision.net) and [Tao Yu](http://ytrock.com)
+
+**Semantic-Aware Sparse View 3D reconstruction**
+*Sep. 2021 – Aug. 2022**
+- Propose a semantic-based representation to encode geometry, texture, and visibility on primitives.
+- Design a pipeline for multi-view 3D reconstruction under sparse observations.
+- Explore the capacity of implicit function for local representation and optimization.
+Mentor: [Prof. Lu Fang](https://luvision.net) and [Prof. Ruqi Huang](https://scholar.google.com/citations?user=cgRY63gAAAAJ&hl=zh-CN&oi=ao)
+
+**Dynamic Vascular 3D Reconstruction (B.S. Thesis)**
+*Oct. 2020 – Aug. 2021*
+- Propose to model 3D dynamic tissue with implicit representation.
+- Design a pipeline for 3D reconstruction with multi-view cone beam CT images.
+Mentor: [Prof. Lu Fang](https://luvision.net) and [Prof. Yulan Guo](https://scholar.google.com/citations?hl=zh-CN&user=WQRNvdsAAAAJ&view_op=list_works&sortby=pubdate)
+
+
+
+<!--
+* **Research Intern (Incoming), [Simons Foundation](https://www.simonsfoundation.org/), New York, USA.**  
+*Jun. 2023 - Aug. 2023*  
+Topic: Out-of-Domain Synapse Detection for Microwasp Brain Connectomes  
+Mentor: [Dr. Jingpeng Wu](https://www.simonsfoundation.org/people/jingpeng-wu/) and [Prof. Dmitri B. Chklovskii](https://www.simonsfoundation.org/people/dmitri-mitya-chklovskii/).
+
+* **Research Intern, Huawei Technologies Co., Ltd., Shenzhen, China.**  
+*Jan. 2021 - Apr. 2021*  
+Topic: Deep Learning for Pulmonary Function Diagnosis  
+Mentor: Changzheng Zhang.  
+Collaborators: Dr. Yimin Wang, Prof. Jinping Zheng, and [Prof. Nanshan Zhong](https://en.wikipedia.org/wiki/Zhong_Nanshan).
+-->
 
 # Honors & Awards
 * *2021*, Excellent Graduate, Sun Yat-Sen University.
@@ -44,31 +88,13 @@ Collaborations and casual chats are welcomed!
 * Membership: EURASIP, IEEE, IEEE SPS, IEEE YP, ACM.
 -->
 
-# Professional Experiences
-<!--
-* **Research Intern (Incoming), [Simons Foundation](https://www.simonsfoundation.org/), New York, USA.**  
-*Jun. 2023 - Aug. 2023*  
-Topic: Out-of-Domain Synapse Detection for Microwasp Brain Connectomes  
-Mentor: [Dr. Jingpeng Wu](https://www.simonsfoundation.org/people/jingpeng-wu/) and [Prof. Dmitri B. Chklovskii](https://www.simonsfoundation.org/people/dmitri-mitya-chklovskii/).
-
-* **Research Intern, Huawei Technologies Co., Ltd., Shenzhen, China.**  
-*Jan. 2021 - Apr. 2021*  
-Topic: Deep Learning for Pulmonary Function Diagnosis  
-Mentor: Changzheng Zhang.  
-Collaborators: Dr. Yimin Wang, Prof. Jinping Zheng, and [Prof. Nanshan Zhong](https://en.wikipedia.org/wiki/Zhong_Nanshan).
--->
 
 # Teaching Experiences
-* ***Fall 2022*, Teaching Assistant, Tsinghua University.**  
-Course: Media and Cognition 
+* ***Fall 2022*, Teaching Assistant, Tsinghua University.**
+Course: Media and Cognition
 Instructor: [Prof. Lu Fang](https://luvision.net), Tsinghua University.
 
 
-<!-- # Education
-* **M.Phil., Data Science and Information Technology**  
-*Sept. 2021 - Present*, Tsinghua University, China.
-* **B.Eng., Electronic Information Science and Technology**  
-*Sept. 2017 - Jun. 2021*, Sun Yat-Sen University, China. -->
 
 
 <!-- <img src="../images/quotation_kobe.PNG" alt="quotation"/> -->
