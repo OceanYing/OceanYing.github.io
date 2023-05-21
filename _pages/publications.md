@@ -19,7 +19,7 @@ author_profile: true
 ### Conference
 
 * **ParseMVS: Learning Primitive-aware Surface Representations for Sparse Multi-view Stereopsis**  
-  **Haiyang Ying**<sup>&#42;</sup>, Jinzhi Zhang<sup>&#42;</sup>, Yuzhe Chen, Zheng Cao, Jing Xiao, Ruqi Huang, Fu Fang<sup>&dagger;,&#42;</sup>.  
+  **Haiyang Ying**<sup>&#42;</sup>, Jinzhi Zhang<sup>&#42;</sup>, Yuzhe Chen, Zheng Cao, Jing Xiao, Ruqi Huang<sup>&dagger;</sup>, Fu Fang<sup>&dagger;</sup>.  
   *The 30th ACM International Conference on Multimedia.*  
   *<font color=blue>(ACM MM 2022)</font>* [[<font color=purple>Paper</font>](https://doi.org/10.1145/3503161.3547920)]
 
