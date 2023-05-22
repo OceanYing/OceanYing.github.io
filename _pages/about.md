@@ -39,21 +39,21 @@ Collaborations and casual chats are welcomed!
 
 # Research Experiences
 
-**Semantic-Aware Indoor Scene Reconstruction and Rendering**
-*Fall. 2017 – Spring. 2021**
+* **Semantic-Aware Indoor Scene Reconstruction and Rendering**
+*Fall. 2017 – Spring. 2021*
 - Propose a semantic-aware hybrid representation for indoor scene modeling.
 - Design a framework for fast indoor scene reconstruction and rendering with RGB-D input.
 - Implement the proposed framework based on Instant-NGP to achieve higher-quality rendering.
 Mentor: [Prof. Lu Fang](https://luvision.net) and [Tao Yu](http://ytrock.com)
 
-**Semantic-Aware Sparse View 3D reconstruction**
-*Sep. 2021 – Aug. 2022**
+* **Semantic-Aware Sparse View 3D reconstruction**
+*Sep. 2021 – Aug. 2022*
 - Propose a semantic-based representation to encode geometry, texture, and visibility on primitives.
 - Design a pipeline for multi-view 3D reconstruction under sparse observations.
 - Explore the capacity of implicit function for local representation and optimization.
 Mentor: [Prof. Lu Fang](https://luvision.net) and [Prof. Ruqi Huang](https://scholar.google.com/citations?user=cgRY63gAAAAJ&hl=zh-CN&oi=ao)
 
-**Dynamic Vascular 3D Reconstruction (B.S. Thesis)**
+* **Dynamic Vascular 3D Reconstruction (B.S. Thesis)**
 *Oct. 2020 – Aug. 2021*
 - Propose to model 3D dynamic tissue with implicit representation.
 - Design a pipeline for 3D reconstruction with multi-view cone beam CT images.
