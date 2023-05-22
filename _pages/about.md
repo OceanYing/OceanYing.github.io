@@ -9,11 +9,13 @@ redirect_from:
 ---
 
 # About Me
-I'm a 2nd-year M.Phil. student in Data Science and Information Technology at TBSI, Tsinghua University(THU), advised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU) in Guangzhou, advised by [Prof. Yulan Guo](https://scholar.google.com/citations?hl=zh-CN&user=WQRNvdsAAAAJ&view_op=list_works&sortby=pubdate) and obtained my bachelor's degree in 2021. My research interests are but not limited to:
-* **Semantic-aware 3D Reconstruction**
-* **3D Scene Parsing and Understdanding**
-* **Object-level SLAM**
+I'm a 2nd-year M.Phil. student in Data Science and Information Technology at TBSI, Tsinghua University(THU), supervised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU) in Guangzhou, advised by [Prof. Yulan Guo](https://scholar.google.com/citations?hl=zh-CN&user=WQRNvdsAAAAJ&view_op=list_works&sortby=pubdate) and obtained my bachelor's degree in 2021. My research interests are but not limited to:
+* **Semantic-aware 3D Reconstruction and Rendering**
+* **3D Scene Parsing, Understdanding, and Locolization**
+* **Geometric Representations such as various Primitives**
 <!-- * **3D Scene Generation** -->
+
+My goal is ***to model, reconstruct, and manipuate the 3D world in an interpretable manner***.
 
 Collaborations and casual chats are welcomed!
 
