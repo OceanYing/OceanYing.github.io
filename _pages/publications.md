@@ -29,6 +29,10 @@ author_profile: true
   *The 30th ACM International Conference on Multimedia.*  
   *<font color=blue>(ACM MM 2022)</font>* [[<font color=purple>Paper</font>](https://doi.org/10.1145/3503161.3547920)]
 
+* **PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis**  
+  **Haiyang Ying**, Baowei Jiang, Jinzhi Zhang, Di Xu, Tao Yu, Qionghai Dai, Fu Fang<sup>&dagger;</sup>.  
+  *Proceedings of the IEEE International Conference on Computer Vision 2023.*  
+  *<font color=blue>(ICCV 2023)</font>* 
 
 <!--
 ### Journal
