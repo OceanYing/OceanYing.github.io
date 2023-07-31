@@ -37,6 +37,7 @@ Collaborations and casual chats are welcomed!
 * [Nov. 2022] I'll serve as a reviewer for [**CVPR 2023**](https://cvpr2023.thecvf.com/)!
 -->
 * [July. 2022] Our paper [**ParseMVS: Learning Primitive-aware Surface Representations for Sparse Multi-view Stereopsis**](https://dl.acm.org/doi/10.1145/3503161.3547920) was accepted by **ACM MM 2022**!
+* [July. 2023] Our paper [**PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis**]() was accepted by **ICCV 2023**!
 
 
 # Research Experiences
