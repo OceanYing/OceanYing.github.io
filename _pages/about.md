@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 # About Me
-I'm a 2nd-year M.Phil. student in Data Science and Information Technology at TBSI, Tsinghua University(THU), supervised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU) in Guangzhou, advised by [Prof. Yulan Guo](https://scholar.google.com/citations?hl=zh-CN&user=WQRNvdsAAAAJ&view_op=list_works&sortby=pubdate) and obtained my bachelor's degree in 2021. 
+I'm a 2nd-year M.Phil. student in Data Science and Information Technology at TBSI, Tsinghua University(THU), supervised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU) in Guangzhou, advised by [Prof. Yulan Guo](http://www.yulanguo.cn/) and obtained my bachelor's degree in 2021. 
 
 ---
 
@@ -26,24 +26,62 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in an interpreta
 ---
 
 # Education
+<!--
 * **M.Phil., Data Science and Information Technology**  
 *Sept. 2021 - Present*, Tsinghua University, China.
 * **B.Eng., Electronic Information Science and Technology**  
 *Sept. 2017 - Jun. 2021*, Sun Yat-Sen University, China.
+-->
+
+<table><tr>
+<td> <img src="../images/THU.png" alt="Drawing" style="width: 100px;"/> </td>
+<td>            
+                <div><font size="4"><b>Tsinghua University</b>  </font></div>
+                <div><font size="2">M.Phil., Data Science and Information Technology </font></div>
+                <div><font size="2">Sept. 2021 - Present, Beijing, China. </font></div>
+                <div><font size="2">Director: Prof. <a href="https://luvision.net">Lu Fang</a> and Prof. <a href="https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao">Qionghai Dai</a> </font></div>
+</tr></table>
+
+<table><tr>
+<td> <img src="../images/SYSU.png" alt="Drawing" style="width: 100px;"/> </td>
+<td>            
+                <div><font size="4"><b>Sun Yat-sen University</b>  </font></div>
+                <div>B.Eng., Electronic Information Science and Technology</div>
+                <div>Sept. 2017 - Jun. 2021, Guangzhou, China.</div>
+                <div>Director: Prof. <a href="http://www.yulanguo.cn/">Yulan Guo</a></div>
+</tr></table>
+
 
 ---
 
 # News
-<!--
-* [Feb. 2023] I'll serve as a reviewer for [**ICCV 2023**](https://iccv2023.thecvf.com/)!
-* [Jan. 2023] One paper accepted by [**ISBI 2023**](https://2023.biomedicalimaging.org/en/)!
-* [Nov. 2022] Two challenge proposals accepted by [**ISBI 2023**](https://2023.biomedicalimaging.org/en/)!
-* [Nov. 2022] I'll serve as a reviewer for [**CVPR 2023**](https://cvpr2023.thecvf.com/)!
--->
-* [July. 2022] Our paper [**ParseMVS: Learning Primitive-aware Surface Representations for Sparse Multi-view Stereopsis**](https://dl.acm.org/doi/10.1145/3503161.3547920) was accepted by **ACM MM 2022**!
-* [July. 2023] Our paper [**PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis**]() was accepted by **ICCV 2023**!
+* [July. 2022] Our paper [**ParseMVS**](https://dl.acm.org/doi/10.1145/3503161.3547920) is accepted by **ACM MM 2022**!
+* [July. 2023] Our paper [**PARF**]() is accepted by **ICCV 2023**!
 
 ---
+
+# Publications
+
+
+<table><tr>
+<td> <img src="../images/parf.png" alt="Drawing" style="width: 300px;"/> </td>
+<td>            
+                <div><font size="4"><b>PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis</b>  </font></div>
+								<span><font size="4"><b>Haiyang Ying</b>, Baowei Jiang, Jinzhi Zhang, Di Xu, Tao Yu<sup>&dagger;</sup>, Qionghai Dai, Fu Fang<sup>&dagger;</sup></font></span>
+								<div><span><font size="4">The International Conference on Computer Vision (ICCV) 2023</font></span> </div>
+                <div> [<a href="https://oceanying.github.io">paper</a>][<a href="https://oceanying.github.io">code</a>] </div>
+</tr></table>
+
+
+<table><tr>
+<td> <img src="../images/parsemvs.png" alt="Drawing" style="width: 335px;"/> </td>
+<td>            
+                <div><font size="4"><b>ParseMVS: Learning Primitive-aware Surface Representations for Sparse Multi-view Stereopsis</b>  </font></div>
+								<span><font size="4">Haiyang Ying**<sup>&#42;</sup>, Jinzhi Zhang<sup>&#42;</sup>, Yuzhe Chen, Zheng Cao, Jing Xiao, Ruqi Huang<sup>&dagger;</sup>, Fu Fang<sup>&dagger;</sup></font></span>
+								<div><span><font size="4">The 30th ACM International Conference on Multimedia</font></span> </div>
+                <div> [<a href="https://doi.org/10.1145/3503161.3547920">paper</a>][<a href="https://oceanying.github.io">code</a>] </div>
+</tr></table>
+
 
 
 # Research Experiences
