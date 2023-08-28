@@ -19,10 +19,16 @@ author_profile: true
 ### Conference
 
 
-<!-- * **PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis**  
-  **Haiyang Ying**, Baowei Jiang, Jinzhi Zhang, Di Xu, Tao Yu, Qionghai Dai, Fu Fang<sup>&dagger;</sup>. 
-  *The International Conference on Computer Vision 2023.*
-  *<font color=blue>(Under review of ICCV 2023)</font>* -->
+
+
+**PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis**  
+  **Haiyang Ying**, Baowei Jiang, Jinzhi Zhang, Di Xu, Tao Yu<sup>&dagger;</sup>, Qionghai Dai, Fu Fang<sup>&dagger;</sup>.  
+  *Proceedings of the IEEE International Conference on Computer Vision 2023.*  
+  *<font color=blue>(ICCV 2023)</font>* 
+  
+<img src="../images/parf.png" alt="drawing" width="600"/>
+
+---
 
 **ParseMVS: Learning Primitive-aware Surface Representations for Sparse Multi-view Stereopsis**  
   **Haiyang Ying**<sup>&#42;</sup>, Jinzhi Zhang<sup>&#42;</sup>, Yuzhe Chen, Zheng Cao, Jing Xiao, Ruqi Huang<sup>&dagger;</sup>, Fu Fang<sup>&dagger;</sup>.  
@@ -32,14 +38,6 @@ author_profile: true
 <img src="../images/parsemvs.png" alt="drawing" width="600"/>
 
 
----
-
-**PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis**  
-  **Haiyang Ying**, Baowei Jiang, Jinzhi Zhang, Di Xu, Tao Yu, Qionghai Dai, Fu Fang<sup>&dagger;</sup>.  
-  *Proceedings of the IEEE International Conference on Computer Vision 2023.*  
-  *<font color=blue>(ICCV 2023)</font>* 
-  
-<img src="../images/parf.png" alt="drawing" width="600"/>
 
 
 <!--
