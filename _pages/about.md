@@ -73,8 +73,8 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in an interpreta
 <td valign="top"> <img src="../images/parf.png" alt="Drawing" style="width: 300px;"/> </td>
 <td>            
                 <div><font size="4"><b>PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis</b>  </font></div>
-								<span><font size="4"><b>Haiyang Ying</b>, Baowei Jiang, Jinzhi Zhang, Di Xu, Tao Yu<sup>&dagger;</sup>, Qionghai Dai, Fu Fang<sup>&dagger;</sup></font></span>
-								<div><span><font size="4">The International Conference on Computer Vision (ICCV) 2023</font></span> </div>
+		<span><font size="3"><b>Haiyang Ying</b>, Baowei Jiang, Jinzhi Zhang, Di Xu, Tao Yu<sup>&dagger;</sup>, Qionghai Dai, Fu Fang<sup>&dagger;</sup></font></span>
+		<div><span><font size="3">The International Conference on Computer Vision (ICCV) 2023</font></span> </div>
                 <div> [<a href="https://oceanying.github.io">paper</a>][<a href="https://oceanying.github.io">code</a>] </div>
 </td>
 </tr>
@@ -83,8 +83,8 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in an interpreta
 <td valign="top"> <img src="../images/parsemvs.png" alt="Drawing" style="width: 335px;"/> </td>
 <td>            
                 <div><font size="4"><b>ParseMVS: Learning Primitive-aware Surface Representations for Sparse Multi-view Stereopsis</b>  </font></div>
-								<span><font size="4">Haiyang Ying**<sup>&#42;</sup>, Jinzhi Zhang<sup>&#42;</sup>, Yuzhe Chen, Zheng Cao, Jing Xiao, Ruqi Huang<sup>&dagger;</sup>, Fu Fang<sup>&dagger;</sup></font></span>
-								<div><span><font size="4">The 30th ACM International Conference on Multimedia</font></span> </div>
+		<span><font size="3">Haiyang Ying**<sup>&#42;</sup>, Jinzhi Zhang<sup>&#42;</sup>, Yuzhe Chen, Zheng Cao, Jing Xiao, Ruqi Huang<sup>&dagger;</sup>, Fu Fang<sup>&dagger;</sup></font></span>
+		<div><span><font size="3">The 30th ACM International Conference on Multimedia</font></span> </div>
                 <div> [<a href="https://doi.org/10.1145/3503161.3547920">paper</a>][<a href="https://oceanying.github.io">code</a>] </div>
 </td>
 </tr></table>
