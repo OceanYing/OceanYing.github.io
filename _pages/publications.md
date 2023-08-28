@@ -26,7 +26,7 @@ author_profile: true
 **PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis**  
   **Haiyang Ying**, Baowei Jiang, Jinzhi Zhang, Di Xu, Tao Yu<sup>&dagger;</sup>, Qionghai Dai, Fu Fang<sup>&dagger;</sup>.  
   *Proceedings of the IEEE International Conference on Computer Vision 2023.*  
-  <span style="color: ##603bb8;">(ICCV 2023)
+  *<span style="color: ##603bb8;">(ICCV 2023)*
   
 <img src="../images/parf.png" alt="drawing" width="600"/>
 
@@ -37,7 +37,7 @@ author_profile: true
 **ParseMVS: Learning Primitive-aware Surface Representations for Sparse Multi-view Stereopsis**  
   **Haiyang Ying**<sup>&#42;</sup>, Jinzhi Zhang<sup>&#42;</sup>, Yuzhe Chen, Zheng Cao, Jing Xiao, Ruqi Huang<sup>&dagger;</sup>, Fu Fang<sup>&dagger;</sup>.  
   *The 30th ACM International Conference on Multimedia.*  
-  <span style="color: ##603bb8;">(ACM MM 2022) [[<font color=purple>Paper</font>](https://doi.org/10.1145/3503161.3547920)]
+  *<span style="color: ##603bb8;">(ACM MM 2022)* [[<font color=purple>Paper</font>](https://doi.org/10.1145/3503161.3547920)]
   
   
 <img src="../images/parsemvs.png" alt="drawing" width="600"/>
