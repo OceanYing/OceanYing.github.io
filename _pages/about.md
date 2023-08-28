@@ -49,7 +49,7 @@ Collaborations and casual chats are welcomed!
 # Research Experiences
 
 * **Semantic-Aware Indoor Scene Reconstruction and Rendering**
-*Fall. 2017 – Spring. 2021*  
+*Sep. 2022 – May. 2023*
 Propose a semantic-aware hybrid representation for indoor scene modeling.  
 Design a framework for fast indoor scene reconstruction and rendering with RGB-D input.  
 Implement the proposed framework based on Instant-NGP to achieve higher-quality rendering.  
