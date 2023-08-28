@@ -9,19 +9,21 @@ redirect_from:
 ---
 
 # About Me
-I'm a 2nd-year M.Phil. student in Data Science and Information Technology at TBSI, Tsinghua University(THU), supervised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU) in Guangzhou, advised by [Prof. Yulan Guo](https://scholar.google.com/citations?hl=zh-CN&user=WQRNvdsAAAAJ&view_op=list_works&sortby=pubdate) and obtained my bachelor's degree in 2021. My research interests are but not limited to:
-* **Semantic-aware 3D Reconstruction and Rendering**
-* **3D Scene Parsing, Understdanding, and Locolization**
-* **Geometric Primitive Representations such as CAD and Quadrics**
+I'm a 2nd-year M.Phil. student in Data Science and Information Technology at TBSI, Tsinghua University(THU), supervised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU) in Guangzhou, advised by [Prof. Yulan Guo](https://scholar.google.com/citations?hl=zh-CN&user=WQRNvdsAAAAJ&view_op=list_works&sortby=pubdate) and obtained my bachelor's degree in 2021. 
+
+---
+
+# Research interests:
+* Semantic-aware 3D Reconstruction and Rendering
+* 3D Scene Parsing, Understdanding, and Locolization
+* Geometric Primitive Representations such as CAD and Quadrics
 <!-- * **3D Scene Generation** -->
 
 My goal is ***to model, reconstruct, and manipuate the 3D world in an interpretable manner***.
 
 Collaborations and casual chats are welcomed!
 
-<!--
-<font color=red>I'm actively looking for a research intern position in summer 2023. Please shoot me an email if interested!</font>
--->
+---
 
 # Education
 * **M.Phil., Data Science and Information Technology**  
@@ -29,6 +31,7 @@ Collaborations and casual chats are welcomed!
 * **B.Eng., Electronic Information Science and Technology**  
 *Sept. 2017 - Jun. 2021*, Sun Yat-Sen University, China.
 
+---
 
 # News
 <!--
@@ -39,6 +42,8 @@ Collaborations and casual chats are welcomed!
 -->
 * [July. 2022] Our paper [**ParseMVS: Learning Primitive-aware Surface Representations for Sparse Multi-view Stereopsis**](https://dl.acm.org/doi/10.1145/3503161.3547920) was accepted by **ACM MM 2022**!
 * [July. 2023] Our paper [**PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis**]() was accepted by **ICCV 2023**!
+
+---
 
 
 # Research Experiences
@@ -63,20 +68,7 @@ Propose to model 3D dynamic tissue with implicit representation.
 Design a pipeline for 3D reconstruction with multi-view cone beam CT images.  
 Mentor: [Prof. Lu Fang](https://luvision.net) and [Prof. Yulan Guo](https://scholar.google.com/citations?hl=zh-CN&user=WQRNvdsAAAAJ&view_op=list_works&sortby=pubdate)
 
-
-
-<!--
-* **Research Intern (Incoming), [Simons Foundation](https://www.simonsfoundation.org/), New York, USA.**  
-*Jun. 2023 - Aug. 2023*  
-Topic: Out-of-Domain Synapse Detection for Microwasp Brain Connectomes  
-Mentor: [Dr. Jingpeng Wu](https://www.simonsfoundation.org/people/jingpeng-wu/) and [Prof. Dmitri B. Chklovskii](https://www.simonsfoundation.org/people/dmitri-mitya-chklovskii/).
-
-* **Research Intern, Huawei Technologies Co., Ltd., Shenzhen, China.**  
-*Jan. 2021 - Apr. 2021*  
-Topic: Deep Learning for Pulmonary Function Diagnosis  
-Mentor: Changzheng Zhang.  
-Collaborators: Dr. Yimin Wang, Prof. Jinping Zheng, and [Prof. Nanshan Zhong](https://en.wikipedia.org/wiki/Zhong_Nanshan).
--->
+---
 
 # Honors & Awards
 * *2021*, Excellent Graduate, Sun Yat-Sen University.
@@ -92,12 +84,14 @@ Collaborators: Dr. Yimin Wang, Prof. Jinping Zheng, and [Prof. Nanshan Zhong](ht
 * Membership: EURASIP, IEEE, IEEE SPS, IEEE YP, ACM.
 -->
 
+---
 
 # Teaching Experiences
 * ***Fall 2022*, Teaching Assistant, Tsinghua University.**  
 Course: Media and Cognition  
 Instructor: [Prof. Lu Fang](https://luvision.net), Tsinghua University.
 
+---
 
 
 
