@@ -16,9 +16,11 @@ author_profile: true
 {% endfor %} -->
 
 (&#42;: Equal Contribution, &dagger;: Corresponding Author.)
-### Conference
 
 
+<!-- # Conference -->
+
+## 2023
 
 
 **PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis**  
@@ -30,10 +32,13 @@ author_profile: true
 
 ---
 
+## 2022
+
 **ParseMVS: Learning Primitive-aware Surface Representations for Sparse Multi-view Stereopsis**  
   **Haiyang Ying**<sup>&#42;</sup>, Jinzhi Zhang<sup>&#42;</sup>, Yuzhe Chen, Zheng Cao, Jing Xiao, Ruqi Huang<sup>&dagger;</sup>, Fu Fang<sup>&dagger;</sup>.  
   *The 30th ACM International Conference on Multimedia.*  
   *<font color=blue>(ACM MM 2022)</font>* [[<font color=purple>Paper</font>](https://doi.org/10.1145/3503161.3547920)]
+  *<span style="color: #FF69B4;">(ACM MM 2022)*
   
 <img src="../images/parsemvs.png" alt="drawing" width="600"/>
 
