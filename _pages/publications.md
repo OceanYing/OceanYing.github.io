@@ -42,6 +42,22 @@ author_profile: true
   
 <img src="../images/parsemvs.png" alt="drawing" width="600"/>
 
+<!--
+<p float="left">
+  <img src="../images/parf.png" width="100" />
+  <img src="../images/parsemvs.png" width="100" /> 
+</p>
+
+<table><tr>
+<td> <img src="../images/parf.png" alt="Drawing" style="width: 100px;"/> </td>
+<td> <img src="../images/parsemvs.png" alt="Drawing" style="width: 100px;"/> </td>
+</tr></table>
+
+-->
+
+
+
+
 
 
 
