@@ -33,23 +33,31 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in an interpreta
 *Sept. 2017 - Jun. 2021*, Sun Yat-Sen University, China.
 -->
 
-<table><tr>
-<td> <img src="../images/THU.png" alt="Drawing" style="width: 100px;"/> </td>
-<td>            
-                <div><font size="4"><b>Tsinghua University</b>  </font></div>
-                <div><font size="2">M.Phil., Data Science and Information Technology </font></div>
-                <div><font size="2">Sept. 2021 - Present, Beijing, China. </font></div>
-                <div><font size="2">Director: Prof. <a href="https://luvision.net">Lu Fang</a> and Prof. <a href="https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao">Qionghai Dai</a> </font></div>
-</tr></table>
+<table>
+	<tr>
+		<td> <img src="../images/THU.png" alt="Drawing" style="width: 100px;"/> </td>
+		<td>            
+		        <div><font size="4"><b>Tsinghua University</b>  </font></div>
+			<div><font size="2">M.Phil., Data Science and Information Technology </font></div>
+			<div><font size="2">Sept. 2021 - Present, Beijing, China. </font></div>
+			<div><font size="2">Advisors: Prof. <a href="https://luvision.net">Lu Fang</a> and Prof. <a href="https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao">Qionghai Dai</a> </font></div>
+		</td>
+	</tr>
+</table>
 
-<table><tr>
-<td> <img src="../images/SYSU.png" alt="Drawing" style="width: 100px;"/> </td>
-<td>            
-                <div><font size="4"><b>Sun Yat-sen University</b>  </font></div>
-                <div>B.Eng., Electronic Information Science and Technology</div>
-                <div>Sept. 2017 - Jun. 2021, Guangzhou, China.</div>
-                <div>Director: Prof. <a href="http://www.yulanguo.cn/">Yulan Guo</a></div>
-</tr></table>
+<table>
+	<tr>
+		<td> 
+			<img src="../images/SYSU.png" alt="Drawing" style="width: 100px;"/> 
+		</td>
+		<td>            
+	                <div><font size="4"><b>Sun Yat-sen University</b>  </font></div>
+	                <div>B.Eng., Electronic Information Science and Technology</div>
+	                <div>Sept. 2017 - Jun. 2021, Guangzhou, China.</div>
+	                <div>Advisor: Prof. <a href="http://www.yulanguo.cn/">Yulan Guo</a></div>
+		</td>
+	</tr>
+</table>
 
 
 ---
@@ -70,6 +78,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in an interpreta
 								<span><font size="4"><b>Haiyang Ying</b>, Baowei Jiang, Jinzhi Zhang, Di Xu, Tao Yu<sup>&dagger;</sup>, Qionghai Dai, Fu Fang<sup>&dagger;</sup></font></span>
 								<div><span><font size="4">The International Conference on Computer Vision (ICCV) 2023</font></span> </div>
                 <div> [<a href="https://oceanying.github.io">paper</a>][<a href="https://oceanying.github.io">code</a>] </div>
+</td>
 </tr></table>
 
 
@@ -80,6 +89,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in an interpreta
 								<span><font size="4">Haiyang Ying**<sup>&#42;</sup>, Jinzhi Zhang<sup>&#42;</sup>, Yuzhe Chen, Zheng Cao, Jing Xiao, Ruqi Huang<sup>&dagger;</sup>, Fu Fang<sup>&dagger;</sup></font></span>
 								<div><span><font size="4">The 30th ACM International Conference on Multimedia</font></span> </div>
                 <div> [<a href="https://doi.org/10.1145/3503161.3547920">paper</a>][<a href="https://oceanying.github.io">code</a>] </div>
+</td>
 </tr></table>
 
 
