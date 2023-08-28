@@ -26,15 +26,15 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in an interpreta
 ---
 
 # Education
-<!--
+
 * **M.Phil., Data Science and Information Technology**  
 *Sept. 2021 - Present*, Tsinghua University, China.
 * **B.Eng., Electronic Information Science and Technology**  
 *Sept. 2017 - Jun. 2021*, Sun Yat-Sen University, China.
--->
 
 
 
+<!--
 <table>
 <tr>
 	<td> <img src="../images/THU.png" alt="Drawing" style="width: 100px;"/> </td>
@@ -58,7 +58,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in an interpreta
 	</td>
 </tr>
 </table>
-
+-->
 
 ---
 
