@@ -14,7 +14,7 @@ I'm a 2nd-year M.Phil. student in Data Science and Information Technology at TBS
 **My research interests mainly lie in 3D computer vision:**, especially in:
 * 3D Representation: Geometric Primitive based 3D Modeling (such as Quadrics and CAD)
 * 3D Reconstruction: Semantic-aware Multi-View Stereo and Rendering
-* 3D Understanding: Semantic-guided Scene Parsing and Navigation
+* 3D Understanding: Hierarchical 3D Scene Parsing and Navigation
 <!-- * **3D Scene Generation** -->
 
 My goal is ***to model, reconstruct, and manipuate the 3D world in a more efficient and interpretable manner***.
