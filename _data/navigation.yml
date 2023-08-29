@@ -2,6 +2,9 @@
 main:
   - title: "Publications"
     url: /publications/
+    
+  - title: "CV"
+    url: https://github.com/OceanYing/OceanYing.github.io/blob/master/files/4_CV_Haiyang_Ying_pic_THUmail.pdf
 
 #   - title: "Talks"
 #     url: /talks/    
