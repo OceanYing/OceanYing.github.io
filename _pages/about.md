@@ -9,56 +9,18 @@ redirect_from:
 ---
 
 # About Me
-I'm a 2nd-year M.Phil. student in Data Science and Information Technology at TBSI, Tsinghua University(THU), supervised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU) in Guangzhou, advised by [Prof. Yulan Guo](http://www.yulanguo.cn/) and obtained my bachelor's degree in 2021. 
+I'm a 2nd-year M.Phil. student in Data Science and Information Technology at TBSI, Tsinghua University(THU), supervised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU), advised by [Prof. Yulan Guo](http://www.yulanguo.cn/) and obtained my bachelor's degree in 2021. 
 
----
-
-# Research interests:
+**My research interests mainly lie in 3D computer vision:**, especially in:
 * 3D Representation: Geometric Primitive based 3D Modeling (such as Quadrics and CAD)
 * 3D Reconstruction: Semantic-aware Multi-View Stereo and Rendering
 * 3D Understanding: Semantic-guided Scene Parsing and Navigation
 <!-- * **3D Scene Generation** -->
 
-My goal is ***to model, reconstruct, and manipuate the 3D world in an interpretable manner***.
+My goal is ***to model, reconstruct, and manipuate the 3D world in a more efficient and interpretable manner***.
 
 <!-- Collaborations and casual chats are welcomed! -->
 
----
-
-# Education
-
-* **M.Phil., Data Science and Information Technology**  
-*Sept. 2021 - Present*, Tsinghua University, China.
-* **B.Eng., Electronic Information Science and Technology**  
-*Sept. 2017 - Jun. 2021*, Sun Yat-Sen University, China.
-
-
-
-<!--
-<table>
-<tr>
-	<td> <img src="../images/THU.png" alt="Drawing" style="width: 100px;"/> </td>
-	<td>            
-		<div><font size="4"><b>Tsinghua University</b>  </font></div>
-		<div><font size="2">M.Phil., Data Science and Information Technology </font></div>
-		<div><font size="2">Sept. 2021 - Present, Beijing, China. </font></div>
-		<div><font size="2">Advisors: Prof. <a href="https://luvision.net">Lu Fang</a> and Prof. <a href="https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao">Qionghai Dai</a> </font></div>
-	</td>
-</tr>
-
-<tr>
-	<td> 
-		<img src="../images/SYSU.png" alt="Drawing" style="width: 100px;"/> 
-	</td>
-	<td>            
-		<div><font size="4"><b>Sun Yat-sen University</b>  </font></div>
-		<div>B.Eng., Electronic Information Science and Technology</div>
-		<div>Sept. 2017 - Jun. 2021, Guangzhou, China.</div>
-		<div>Advisor: Prof. <a href="http://www.yulanguo.cn/">Yulan Guo</a></div>
-	</td>
-</tr>
-</table>
--->
 
 ---
 
@@ -114,6 +76,43 @@ Mentor: [Prof. Lu Fang](https://luvision.net) and [Prof. Ruqi Huang](https://sch
 Propose to model 3D dynamic tissue with implicit representation.  
 Design a pipeline for 3D reconstruction with multi-view cone beam CT images.  
 Mentor: [Prof. Lu Fang](https://luvision.net) and [Prof. Yulan Guo](https://scholar.google.com/citations?hl=zh-CN&user=WQRNvdsAAAAJ&view_op=list_works&sortby=pubdate)
+
+
+---
+
+# Education
+
+* **M.Phil., Data Science and Information Technology**  
+*Sept. 2021 - Present*, Tsinghua University, China.
+* **B.Eng., Electronic Information Science and Technology**  
+*Sept. 2017 - Jun. 2021*, Sun Yat-Sen University, China.
+
+
+<!--
+<table>
+<tr>
+	<td> <img src="../images/THU.png" alt="Drawing" style="width: 100px;"/> </td>
+	<td>            
+		<div><font size="4"><b>Tsinghua University</b>  </font></div>
+		<div><font size="2">M.Phil., Data Science and Information Technology </font></div>
+		<div><font size="2">Sept. 2021 - Present, Beijing, China. </font></div>
+		<div><font size="2">Advisors: Prof. <a href="https://luvision.net">Lu Fang</a> and Prof. <a href="https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao">Qionghai Dai</a> </font></div>
+	</td>
+</tr>
+
+<tr>
+	<td> 
+		<img src="../images/SYSU.png" alt="Drawing" style="width: 100px;"/> 
+	</td>
+	<td>            
+		<div><font size="4"><b>Sun Yat-sen University</b>  </font></div>
+		<div>B.Eng., Electronic Information Science and Technology</div>
+		<div>Sept. 2017 - Jun. 2021, Guangzhou, China.</div>
+		<div>Advisor: Prof. <a href="http://www.yulanguo.cn/">Yulan Guo</a></div>
+	</td>
+</tr>
+</table>
+-->
 
 ---
 
