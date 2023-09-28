@@ -62,16 +62,19 @@
 <!--         <embed src="img/Teaser_v4.pdf" width="500" height="375" type="application/pdf"> -->
         <hr>
         <p>
-            We present PARF, Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis. 
+            We present PARF, Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis, which enables both efficient and high-quality rendering in general indoor scenes.. 
             Standard volume based rendering methods like NeRF can model complex scenes but suffer from heavy sampling and ambiguous geometry.
             Primitive based rendering methods like NeurMips enjoys fast rendering but have difficulty representing complex geometric.
             </br>
             </br>
+        </p>
+        <img src="img/figure2_final.png" title="Representation" class="center" width="100%">
+        <hr>
+        <p>
             We propose a novel hybrid representation to take advantage of both kinds of methods.
             Specifically, we represent the scene with a semantic volume, which consists three kinds of voxels with different sampling strategy. 
             D-voxels we simply use dense sampling like nerf, while for P-voxels we apply sparse primitive aware sampling strategy. 
             Besides, we simply skip sampling within E-voxels.
-            We found this hybrid rendering method enables both efficient and high-quality rendering in general indoor scenes.
         </p>
     </div>
 
