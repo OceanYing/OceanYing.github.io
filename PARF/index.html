@@ -72,20 +72,20 @@
 
     <div class="section">
         <h2>Representation</h2>
-        <img src="img/figure2_final.png" title="Representation" class="center" width="80%">
-        <hr>
         <p>
+            </br>
             We propose a novel hybrid representation to take advantage of both kinds of methods.
             Specifically, we represent the scene with a semantic volume, which consists three kinds of voxels with different sampling strategy. 
             D-voxels we simply use dense sampling like nerf, while for P-voxels we apply sparse primitive aware sampling strategy. 
             Besides, we simply skip sampling within E-voxels.
+            </br>
         </p>
+        <img src="img/figure2_final.png" title="Representation" class="center" width="90%">
         <hr>
     </div>
     
     <div class="section">
         <h2>Framework</h2>
-        <img src="img/figure3_final.png" title="Framework" class="center" width="100%">
         <p>
             </br>
             we show the optimization framework for incremental radiance reconstruction.
@@ -95,6 +95,7 @@
             After that, primitive aware hybrid rendering is applied to render RGB values, depth values as well as semantic values which are supervised by the input frames.
             </br>
         </p>
+        <img src="img/figure3_final.png" title="Framework" class="center" width="100%">
         <hr>
     </div>
 
