@@ -57,16 +57,26 @@
 
 <div class="container">
     <div class="section">
-        <img src="img/Teaser.png" title="Performance comparison with the state-of-the-art radiance field reconstruction methods" class="center" width="100%">
-<!--         <embed src="img/Teaser_v4.pdf" width="500" height="375" type="application/pdf"> -->
+        <h2>Abstract</h2>
         <p>
             </br>
-            We present PARF, Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis, which enables both efficient and high-quality rendering in general indoor scenes. 
+<!--             We present PARF, Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis, which enables both efficient and high-quality rendering in general indoor scenes. 
             Standard volume based rendering methods like NeRF can model complex scenes but suffer from heavy sampling and ambiguous geometry.
-            Primitive based rendering methods like NeurMips enjoys fast rendering but have difficulty representing complex geometric.
+            Primitive based rendering methods like NeurMips enjoys fast rendering but have difficulty representing complex geometric. -->
+
+            We propose a method for fast scene radiance field reconstruction with strong novel view synthesis performance and convenient scene editing functionality. 
+            The key idea is to fully utilize semantic parsing and primitive extraction for constraining and accelerating the radiance field reconstruction process. 
+            To fulfill this goal, a primitive-aware hybrid rendering strategy was proposed to enjoy the best of both volumetric and primitive rendering. 
+            We further contribute a reconstruction pipeline conducts primitive parsing and radiance field learning iteratively for each input frame which successfully fuses semantic, primitive, and radiance information into a single framework. 
+            Extensive evaluations demonstrate the fast reconstruction ability, high rendering quality, and convenient editing functionality of our method.
+            </br>
             </br>
         </p>
+        <img src="img/Teaser.png" title="Performance comparison with the state-of-the-art radiance field reconstruction methods" class="center" width="100%">
         <hr>
+        <p>
+            </br>
+        </p>
     </div>
 
     <div class="section">
@@ -81,6 +91,9 @@
         </p>
         <img src="img/figure2_final.png" title="Representation" class="center" width="90%">
         <hr>
+        <p>
+            </br>
+        </p>
     </div>
     
     <div class="section">
@@ -96,6 +109,9 @@
         </p>
         <img src="img/figure3_final.png" title="Framework" class="center" width="100%">
         <hr>
+        <p>
+            </br>
+        </p>
     </div>
 
     <div class="section">
@@ -115,6 +131,9 @@
                         <source src="img/demo5_video_increm1.mp4" type="video/mp4">
                     </video>
                 </div>
+                <p>
+                    </br>
+                </p>
             </div>
             <hr>
             <div class="col-sm-10">
@@ -124,6 +143,9 @@
                         <source src="img/demo5_video_increm2.mp4" type="video/mp4">
                     </video>
                 </div>
+                <p>
+                    </br>
+                </p>
             </div>
             <hr>
             <div class="col-sm-10">
@@ -136,6 +158,9 @@
             </div>
         </div>
         <hr>
+        <p>
+            </br>
+        </p>
     </div>
 
     <div class="section">
@@ -145,7 +170,7 @@
             We also show the extrapolation ability of our method. 
             Note that under extrapolation views, PARF shows robust rendering results with the help of primitive-aware representation, 
             while NeRF-SLAM shows blurry rendering results due to the ambiguous geometry.
-            </br>
+            </br></br>
         </p>
         
         <div class="row justify-content-left">
@@ -200,7 +225,7 @@
         <p>
             </br>
             We show that our method is capable of real-time rendering and interactions.
-            </br>
+            </br></br>
         </p>
         <!-- <div class="row align-items-center"> -->
         <div class="row justify-content-left">
@@ -211,6 +236,9 @@
                         <source src="img/demo5_video_drag1.mp4" type="video/mp4">
                     </video>
                 </div>
+                <p>
+                    </br>
+                </p>
             </div>
             <hr>
             <div class="col-sm-12">
@@ -223,6 +251,9 @@
             </div>
         </div>
         <hr>
+        <p>
+            </br>
+        </p>
     </div>
 
 
@@ -235,6 +266,9 @@
         </p>
         <img src="img/sparsity.png" title="Representation" class="center" width="80%">
         <hr>
+        <p>
+            </br>
+        </p>
     </div>
 
     
@@ -247,6 +281,9 @@
         </p>
         <img src="img/Editing.png" title="Representation" class="center" width="80%">
         <hr>
+        <p>
+            </br>
+        </p>
     </div>
 
     
@@ -254,6 +291,7 @@
     <div class="section">
         <h2>Conclusion</h2>
         <p>
+            </br>
             We introduce PARF, a Primitive-Aware Radiance Fusion method for indoor scene radiance field reconstruction and editing. 
             By combining volumetric and primitive rendering in a hybrid neural representation, 
             we successfully merge semantic parsing, primitive extraction, and radiance fusion into a single framework. 
@@ -265,20 +303,7 @@
 
     </div>
 
-
-<!--     <div class="section">
-        <h2>Paper</h2>
-        <hr>
-        <div>
-            <div class="list-group">
-                <a href="https://arxiv.org/abs/2103.15875"
-                   class="list-group-item">
-                    <img src="img/paper_overview.png" style="width:100%; margin-right:-20px; margin-top:-10px;">
-                </a>
-            </div>
-        </div>
-    </div> -->
-
+    
     <div class="section">
         <h2>Bibtex</h2>
         <hr>
