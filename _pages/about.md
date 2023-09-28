@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 # About Me
-I'm a 2nd-year M.Phil. student in Data Science and Information Technology at TBSI, Tsinghua University(THU), supervised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU), advised by [Prof. Yulan Guo](http://www.yulanguo.cn/) and obtained my bachelor's degree in 2021. 
+I'm a 2nd-year M.Phil. student in Data Science and Information Technology at TBSI, Tsinghua University(THU), supervised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU), <!-- advised by [Prof. Yulan Guo](http://www.yulanguo.cn/)--> and obtained my bachelor's degree in 2021. 
 
 **My research interests mainly lie in 3D computer vision:**, especially in:
 * 3D Representation: Geometric Primitive based 3D Modeling (such as Quadrics and CAD)
@@ -75,7 +75,7 @@ Mentor: [Prof. Lu Fang](https://luvision.net) and [Prof. Ruqi Huang](https://sch
 *Oct. 2020 – Aug. 2021*  
 Propose to model 3D dynamic tissue with implicit representation.  
 Design a pipeline for 3D reconstruction with multi-view cone beam CT images.  
-Mentor: [Prof. Lu Fang](https://luvision.net) and [Prof. Yulan Guo](https://scholar.google.com/citations?hl=zh-CN&user=WQRNvdsAAAAJ&view_op=list_works&sortby=pubdate)
+Mentor: [Prof. Lu Fang](https://luvision.net) <!-- and [Prof. Yulan Guo](https://scholar.google.com/citations?hl=zh-CN&user=WQRNvdsAAAAJ&view_op=list_works&sortby=pubdate) -->
 
 
 ---
@@ -134,8 +134,10 @@ Mentor: [Prof. Lu Fang](https://luvision.net) and [Prof. Yulan Guo](https://scho
 
 # Teaching Experiences
 * ***Fall 2022*, Teaching Assistant, Tsinghua University.**  
-Course: Media and Cognition  
-Instructor: [Prof. Lu Fang](https://luvision.net), Tsinghua University.
+Course: Media and Cognition (English)
+
+* ***Fall 2023*, Teaching Assistant, Tsinghua University.**  
+Course: Machine Vision (English)
 
 ---
 
