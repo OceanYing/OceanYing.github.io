@@ -62,13 +62,18 @@
 <!--         <embed src="img/Teaser_v4.pdf" width="500" height="375" type="application/pdf"> -->
         <hr>
         <p>
-            We present PARF, Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis, which enables both efficient and high-quality rendering in general indoor scenes.. 
+            We present PARF, Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis, which enables both efficient and high-quality rendering in general indoor scenes. 
             Standard volume based rendering methods like NeRF can model complex scenes but suffer from heavy sampling and ambiguous geometry.
             Primitive based rendering methods like NeurMips enjoys fast rendering but have difficulty representing complex geometric.
             </br>
             </br>
         </p>
-        <img src="img/figure2_final.png" title="Representation" class="center" width="100%">
+    </div>
+
+    <div class="section">
+        <h2>Representation</h2>
+        <hr>
+        <img src="img/figure2_final.png" title="Representation" class="center" width="80%">
         <hr>
         <p>
             We propose a novel hybrid representation to take advantage of both kinds of methods.
@@ -77,18 +82,19 @@
             Besides, we simply skip sampling within E-voxels.
         </p>
     </div>
-
+    
     <div class="section">
-        <h2>Applications</h2>
+        <h2>Framework</h2>
+        <hr>
+        <img src="img/figure3_final.png" title="Framework" class="center" width="80%">
         <hr>
         <p>
-            Scene-specific implicit 3D semantic representation is obtained by training on colour images and semantic labels with associated poses. 
-            Motivated by the enforcement of multi-view consistency and internal coherence within representation,
-            <b>we find that the training process of Semantic-NeRF itself is a multi-view label fusion and propagation process, i.e., fusion via learning</b>.
-            So that it is possible to train Semantic-NeRF efficiently to accurately render the full scene with various types of sparse or imperfect labels.
-            </br>
-            </br>
-            We aim to demonstrate the benefits and promising applications of efficiently learning such a joint 3D representation for semantic labelling and understanding. 
+            we show the optimization framework for incremental radiance reconstruction.
+            Given each RGBD image as input, we first detect primitives such as planes.
+            Then we merge the detected new primitives into a global primitive list.
+            Next, we back project the semantic frame into a 3D semantic volume to update the global semantic state.
+            After that, primitive aware hybrid rendering is applied to render RGB values, depth values as well as semantic values which are supervised by the input frames.
+        </p>
     </div>
 
 
