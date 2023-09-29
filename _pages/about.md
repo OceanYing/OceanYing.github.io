@@ -26,7 +26,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 
 # News
 * [July. 2022] Our paper [**ParseMVS**](https://dl.acm.org/doi/10.1145/3503161.3547920) is accepted by **ACM MM 2022**!
-* [July. 2023] Our paper [**PARF**]() is accepted by **ICCV 2023**!
+* [July. 2023] Our paper [**PARF**](https://oceanying.github.io/PARF/) is accepted by **ICCV 2023**!
 
 ---
 
@@ -39,7 +39,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
                 <div><font size="4"><b>PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis</b>  </font></div>
 		<span><font size="3"><b>Haiyang Ying</b>, Baowei Jiang, Jinzhi Zhang, Di Xu, Tao Yu<sup>&dagger;</sup>, Qionghai Dai, Fu Fang<sup>&dagger;</sup></font></span>
 		<div><span><font size="3">The International Conference on Computer Vision (ICCV) 2023</font></span> </div>
-                <div> [<a href="https://oceanying.github.io">paper</a>][<a href="https://oceanying.github.io">code</a>] </div>
+                <div> [<a href="https://oceanying.github.io/PARF/">project</a>][<a>code(coming soon)</a>] </div>
 </td>
 </tr>
 
