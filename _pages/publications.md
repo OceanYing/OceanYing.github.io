@@ -26,7 +26,7 @@ author_profile: true
 **PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis**  
   **Haiyang Ying**, Baowei Jiang, Jinzhi Zhang, Di Xu, Tao Yu<sup>&dagger;</sup>, Qionghai Dai, Fu Fang<sup>&dagger;</sup>.  
   *Proceedings of the IEEE International Conference on Computer Vision 2023.*  
-  *<font color=purple>(ICCV 2023)</font>*
+  *<font color=purple>(ICCV 2023)</font>* [[<font color=purple>Project</font>](https://oceanying.github.io/PARF/)]
   
 <img src="../images/parf.png" alt="drawing" width="600"/>
 
