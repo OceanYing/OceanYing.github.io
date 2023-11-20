@@ -99,13 +99,12 @@
         <h2>Representation</h2>
         <hr>
         <p>
-            Standard volume based rendering methods like NeRF can model complex scenes but suffer from heavy sampling and ambiguous geometry.
-            Primitive based rendering methods like NeurMips enjoys fast rendering but have difficulty representing complex geometric.
-            </br>
-            We propose a novel hybrid representation to take advantage of both kinds of methods.
-            Specifically, we represent the scene with a semantic volume, which consists three kinds of voxels with different sampling strategy. 
-            D-voxels we simply use dense sampling like nerf, while for P-voxels we apply sparse primitive aware sampling strategy. 
-            Besides, we simply skip sampling within E-voxels.
+            We propose a novel hierarchical representation based on the masks given by click-based 2D segmentation methods.
+            (a) For each image, click-based 2D segmentors provide a set of 2D binary masks. 
+            (b) Directly overlapping masks implemented by conventional methods (like SAM) lead to the loss of hierarchical information. 
+            (c) While our patch-based modeling effectively preserves the hierarchical relationship between pixels. 
+            The hierarchical representation of each image includes a patch index map and a correlation matrix, 
+            where the relevance between the anchor patch and other patches is evaluated via a voting strategy.
             </br>
         </p>
         <img src="img/representationx.png" title="Representation" class="center" width="90%">
@@ -116,11 +115,11 @@
         <h2>Framework</h2>
         <hr>
         <p>
-            we show the optimization framework for incremental radiance reconstruction.
-            Given each RGBD image as input, we first detect primitives such as planes.
-            Then we merge the detected new primitives into a global primitive list.
-            Next, we back project the semantic frame into a 3D semantic volume to update the global semantic state.
-            After that, primitive aware hybrid rendering is applied to render RGB values, depth values as well as semantic values which are supervised by the input frames.
+            We propose a framework of hierarchical contrastive learning in 3D space for feature field optimization. 
+            (a) For each input RGB image, we apply (b) 2D hierarchical modeling to get a patch index map and a correlation matrix. 
+            During training, we utilize 
+            (c) NeRF-based (or mesh-based) rendering pipeline to render features from 3D space and apply hierarchical contrastive learning 
+            (d) to the rendered features to optimize the feature field for segmentation.
             </br>
         </p>
         <img src="img/frameworkx.png" title="Framework" class="center" width="100%">
