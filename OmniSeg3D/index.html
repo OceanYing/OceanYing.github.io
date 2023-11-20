@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-          content="PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis">
+          content="OmniSeg3D: Omniversal 3D Segmentation via Hierarchical Contrastive Learning">
     <meta name="author" content="Haiyang Ying,
-                                Baowei Jiang,
+                                Yixuan Yin,
                                 Jinzhi Zhang,
-                                Di Xu,
+                                Fan Wang,
                                 Tao Yu,
-                                Qionghai Dai,
+                                Ruqi Huang,
                                 Lu Fang">
 
-    <title>PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis</title>
+    <title>OmniSeg3D: Omniversal 3D Segmentation via Hierarchical Contrastive Learning</title>
     <!-- Bootstrap core CSS -->
     <!--link href="bootstrap.min.css" rel="stylesheet"-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -28,16 +28,16 @@
 <body>
 <div class="jumbotron jumbotron-fluid">
     <div class="container"></div>
-    <h2>PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis</h2>
-    <h3>(ICCV 2023)</h3>
+    <h2>OmniSeg3D: Omniversal 3D Segmentation via Hierarchical Contrastive Learning</h2>
+    <h3>(ArXiv 2023)</h3>
     <hr>
     <p class="authors">
         <a href="https://oceanying.github.io/" target="_blank"> Haiyang Ying</a>,
-        <a target="_blank"> Baowei Jiang</a>,
+        <a target="_blank"> Yixuan Yin</a>,
         <a target="_blank"> Jinzhi Zhang</a>,
-        <a target="_blank"> Di Xu</a>,
+        <a target="_blank"> Fan Wang</a>,
         <a href="https://ytrock.com/" target="_blank"> Tao Yu</a>,
-        <a href="http://media.au.tsinghua.edu.cn/english/team/qhdai.html" target="_blank"> Qionghai Dai</a>,
+        <a href="https://rqhuang88.github.io/" target="_blank"> Ruqi Huang</a>,
         <a href="http://luvision.net/" target="_blank"> Lu Fang</a>,
     </p>
 
@@ -61,22 +61,27 @@
         <h2>Abstract</h2>
         <hr>
         <p>
-<!--             We present PARF, Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis, which enables both efficient and high-quality rendering in general indoor scenes. 
-            Standard volume based rendering methods like NeRF can model complex scenes but suffer from heavy sampling and ambiguous geometry.
-            Primitive based rendering methods like NeurMips enjoys fast rendering but have difficulty representing complex geometric. -->
-
-            We propose a method for fast scene radiance field reconstruction with strong novel view synthesis performance and convenient scene editing functionality. 
-            The key idea is to fully utilize semantic parsing and primitive extraction for constraining and accelerating the radiance field reconstruction process. 
-            To fulfill this goal, a primitive-aware hybrid rendering strategy was proposed to enjoy the best of both volumetric and primitive rendering. 
-            We further contribute a reconstruction pipeline conducts primitive parsing and radiance field learning iteratively for each input frame which successfully fuses semantic, primitive, and radiance information into a single framework. 
-            Extensive evaluations demonstrate the fast reconstruction ability, high rendering quality, and convenient editing functionality of our method.
+            Towards holistic understanding of 3D scenes, a general 3D segmentation method is needed 
+            that can segment diverse objects without restrictions on object quantity or categories, 
+            while also reflecting the inherent hierarchical structure. To achieve this, we propose OmniSeg3D, 
+            an omniversal segmentation method aims for segmenting anything in 3D all at once. 
+            The key insight is to lift multi-view inconsistent 2D segmentations into a consistent 3D feature field 
+            through a hierarchical contrastive learning framework, which is accomplished by two steps. 
+            Firstly, we design a novel hierarchical representation based on category-agnostic 2D segmentations 
+            to model the multi-level relationship among pixels. Secondly, image features rendered from the 3D feature field
+            are clustered at different levels, which can be further drawn closer or pushed apart according to 
+            the hierarchical relationship between different levels. In tackling the challenges posed by inconsistent 2D segmentations, 
+            this framework yields a global consistent 3D feature field, which further enables hierarchical segmentation, 
+            multi-object selection, and global discretization. Extensive experiments demonstrate the effectiveness of our method
+            on high-quality 3D segmentation and accurate hierarchical structure understanding. 
+            A graphical user interface further facilitates flexible interaction for omniversal 3D segmentation.
             </br>
         </p>
         <img src="img/Teaser_v6.png" title="Performance comparison with the state-of-the-art radiance field reconstruction methods" class="center" width="100%">
         <hr>
     </div>
 
-    <div class="section">
+<!--     <div class="section">
         <h2>Representation</h2>
         <hr>
         <p>
@@ -91,9 +96,9 @@
         </p>
         <img src="img/figure2_final.png" title="Representation" class="center" width="90%">
         <hr>
-    </div>
+    </div> -->
     
-    <div class="section">
+<!--     <div class="section">
         <h2>Framework</h2>
         <hr>
         <p>
@@ -109,14 +114,15 @@
         <p>
             </br>
         </p>
-    </div>
+    </div> -->
 
     <div class="section">
-        <h2>Incremental Performance</h2>
+        <h2>Interactive Multi-object Segmentation</h2>
         <hr>
         <p>
-            We provide performance comparison between PARF and NeRF-SLAM which is in depth supervised version of InstantNGP.
-            Notice our PARF enjoys much faster convergence with the help of primitive-aware hybrid representation.
+            We show multi-object segmentation performance on a challenging scene "Tengwang Pavilion", 
+            which contains lots of object and parts that has ambiguious definition. Our method shows robust performance 
+            on category-agnostic object/part segmentation.
             </br>
         </p>
         <!-- <div class="row align-items-center"> -->
@@ -125,14 +131,14 @@
                 <h5>1. Replica Office_0</h5>
                 <div class="col justify-content-center text-center">
                     <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                        <source src="img/demo5_video_increm1.mp4" type="video/mp4">
+                        <source src="img/twg_interactive_demo_comp.mp4" type="video/mp4">
                     </video>
                 </div>
                 <p>
                     </br>
                 </p>
             </div>
-            <hr>
+<!--             <hr>
             <div class="col-sm-10">
                 <h5>2. Replica Office_2</h5>
                 <div class="col justify-content-center text-center">
@@ -144,15 +150,15 @@
                     </br>
                 </p>
             </div>
-            <hr>
-            <div class="col-sm-10">
+            <hr> -->
+<!--             <div class="col-sm-10">
                 <h5>3. Replica Room_0</h5>
                 <div class="col justify-content-center text-center">
                     <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
                         <source src="img/demo5_video_increm3.mp4" type="video/mp4">
                     </video>
                 </div>
-            </div>
+            </div> -->
         </div>
         <hr>
         <p>
@@ -161,12 +167,10 @@
     </div>
 
     <div class="section">
-        <h2>Extropolation Performance</h2>
+        <h2>Global Discretization Performance</h2>
         <hr>
         <p>
-            We also show the extrapolation ability of our method. 
-            Note that under extrapolation views, PARF shows robust rendering results with the help of primitive-aware representation, 
-            while NeRF-SLAM shows blurry rendering results due to the ambiguous geometry.
+            We also show the 3D discretization ability of our method. 
             </br></br>
         </p>
         
@@ -177,11 +181,11 @@
                 <div class="col justify-content-center text-center">
                     <!-- <video width="100%" playsinline="" autoplay="" loop="" preload="" muted=""> -->
                     <video width="100%" playsinline="" controls="" loop="" preload="" muted="">
-                        <source src="img/demo5_video_extra1.mp4" type="video/mp4">
+                        <source src="img/demo.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
-            <div class="col-sm-6">
+<!--             <div class="col-sm-6">
                 <h5>2. Replica Office_2</h5>
                 <div class="col justify-content-center text-center">
                     <!-- <video width="100%" playsinline="" autoplay="" loop="" preload="" muted=""> -->
@@ -189,9 +193,9 @@
                         <source src="img/demo5_video_extra2.mp4" type="video/mp4">
                     </video>
                 </div>
-            </div>
+            </div> -->
         </div>
-        </br>
+<!--         </br>
         <div class="row justify-content-left">
         <!-- <div class="row align-items-center"> -->
             <div class="col-sm-6">
@@ -212,7 +216,7 @@
                     </video>
                 </div>
             </div>
-        </div>
+        </div> -->
         <hr>
         <p>
             </br>
