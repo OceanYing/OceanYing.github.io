@@ -41,8 +41,8 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 		<div><span><font size="3">(ArXiv 2023)</font></span> </div>
                 <div> 
 			[<a href="https://arxiv.org/abs/2311.11666">ArXiv</a>]
-			[<a href="https://oceanying.github.io/OmniSeg3D/">Project</a>]
-			[<a>code(coming soon)</a>] 
+			[<a href="https://oceanying.github.io/OmniSeg3D/">Project Page</a>]
+			[<a>Code(coming soon)</a>] 
 		</div>
 </td>
 </tr>
@@ -53,7 +53,12 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
                 <div><font size="4"><b>PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis</b>  </font></div>
 		<span><font size="3"><b>Haiyang Ying</b>, Baowei Jiang, Jinzhi Zhang, Di Xu, Tao Yu<sup>&dagger;</sup>, Qionghai Dai, Fu Fang<sup>&dagger;</sup></font></span>
 		<div><span><font size="3">The International Conference on Computer Vision (ICCV) 2023</font></span> </div>
-                <div> [<a href="https://oceanying.github.io/PARF/">Project</a>][<a>code(coming soon)</a>] </div>
+                <div> 
+			[<a href="https://arxiv.org/abs/2309.17190">ArXiv</a>]
+			[<a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Ying_PARF_Primitive-Aware_Radiance_Fusion_for_Indoor_Scene_Novel_View_Synthesis_ICCV_2023_paper.pdf">Paper</a>]
+			[<a href="https://oceanying.github.io/PARF/">Project Page</a>]
+			[<a>Code(coming soon)</a>] 
+		</div>
 </td>
 </tr>
 
@@ -63,7 +68,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
                 <div><font size="4"><b>ParseMVS: Learning Primitive-aware Surface Representations for Sparse Multi-view Stereopsis</b>  </font></div>
 		<span><font size="3"><b>Haiyang Ying<sup>&#42;</sup></b>, Jinzhi Zhang<sup>&#42;</sup>, Yuzhe Chen, Zheng Cao, Jing Xiao, Ruqi Huang<sup>&dagger;</sup>, Fu Fang<sup>&dagger;</sup></font></span>
 		<div><span><font size="3">The 30th ACM International Conference on Multimedia (ACM MM 2022)</font></span> </div>
-                <div> [<a href="https://doi.org/10.1145/3503161.3547920">paper</a>][<a href="https://oceanying.github.io">code</a>] </div>
+                <div> [<a href="https://doi.org/10.1145/3503161.3547920">Paper</a>][<a href="https://oceanying.github.io">Code</a>] </div>
 </td>
 </tr></table>
 
