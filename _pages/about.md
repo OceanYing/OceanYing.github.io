@@ -25,9 +25,9 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 ---
 
 # News
-* [July. 2022] Our paper [**ParseMVS**](https://dl.acm.org/doi/10.1145/3503161.3547920) is accepted by **ACM MM 2022**!
+* [July. 2022] The code of our [**OmniSeg3D**](https://github.com/THU-luvision/OmniSeg3D) project is available now!
 * [July. 2023] Our paper [**PARF**](https://oceanying.github.io/PARF/) is accepted by **ICCV 2023**!
-
+* [July. 2022] Our paper [**ParseMVS**](https://dl.acm.org/doi/10.1145/3503161.3547920) is accepted by **ACM MM 2022**!
 ---
 
 # Publications
@@ -42,7 +42,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
                 <div> 
 			[<a href="https://arxiv.org/abs/2311.11666">ArXiv</a>]
 			[<a href="https://oceanying.github.io/OmniSeg3D/">Project Page</a>]
-			[<a>Code(coming soon)</a>] 
+			[<a href="https://github.com/THU-luvision/OmniSeg3D">Code</a>] 
 		</div>
 </td>
 </tr>
