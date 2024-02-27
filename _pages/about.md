@@ -9,11 +9,11 @@ redirect_from:
 ---
 
 # About Me
-I'm a 2nd-year M.Phil. student in Data Science and Information Technology at TBSI, Tsinghua University(THU), supervised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU), <!-- advised by [Prof. Yulan Guo](http://www.yulanguo.cn/)--> and obtained my bachelor's degree in 2021. 
+I'm a 3nd-year M.Phil. student in Data Science and Information Technology at TBSI, Tsinghua University(THU), supervised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU), <!-- advised by [Prof. Yulan Guo](http://www.yulanguo.cn/)--> and obtained my bachelor's degree in 2021. 
 
-**My research interests mainly lie in 3D computer vision:**, especially in:
+**My research interests mainly lie in 3D computer vision**, especially in:
 * 3D Representation: Geometric Primitive based 3D Modeling (such as Quadrics and CAD)
-* 3D Reconstruction: Semantic-aware Multi-View Stereo and Rendering
+* 3D Reconstruction: Semantic-aware Reconstruction and Rendering from images and video
 * 3D Understanding: Hierarchical 3D Scene Parsing and Navigation
 <!-- * **3D Scene Generation** -->
 
@@ -25,7 +25,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 ---
 
 # News
-* [Jan. 2024] The code of our [**OmniSeg3D**](https://github.com/THU-luvision/OmniSeg3D) project is available now!
+* [Feb. 2024] Our paper [**OmniSeg3D**](https://oceanying.github.io/OmniSeg3D/) is accepted by **CVPR 2024** and [**code**](https://github.com/THU-luvision/OmniSeg3D) is available now!
 * [July. 2023] Our paper [**PARF**](https://oceanying.github.io/PARF/) is accepted by **ICCV 2023**!
 * [July. 2022] Our paper [**ParseMVS**](https://dl.acm.org/doi/10.1145/3503161.3547920) is accepted by **ACM MM 2022**!
 
@@ -39,7 +39,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 <td>            
                 <div><font size="4"><b>OmniSeg3D: Omniversal 3D Segmentation via Hierarchical Contrastive Learning</b>  </font></div>
 		<span><font size="3"><b>Haiyang Ying</b>, Yixuan Yin, Jinzhi Zhang, Fan Wang, Tao Yu, Ruqi Huang, Fu Fang<sup>&dagger;</sup></font></span>
-		<div><span><font size="3">(ArXiv 2023)</font></span> </div>
+		<div><span><font size="3">(CVPR 2024)</font></span> </div>
                 <div> 
 			[<a href="https://arxiv.org/abs/2311.11666">ArXiv</a>]
 			[<a href="https://oceanying.github.io/OmniSeg3D/">Project Page</a>]
