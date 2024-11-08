@@ -9,7 +9,8 @@ redirect_from:
 ---
 
 # About Me
-I'm a 3nd-year M.Phil. student in Data Science and Information Technology at TBSI, Tsinghua University(THU), supervised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU), <!-- advised by [Prof. Yulan Guo](http://www.yulanguo.cn/)--> and obtained my bachelor's degree in 2021. 
+I'm now a first-year PhD student in computer science at the University of Maryland (College Park), working with [Prof. Matthias Zwicker](https://www.cs.umd.edu/~zwicker/).
+Before that, I got my master's degree in Data Science and Information Technology at TBSI, Tsinghua University(THU), supervised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU), <!-- advised by [Prof. Yulan Guo](http://www.yulanguo.cn/)--> and obtained my bachelor's degree in 2021. 
 
 **My research interests mainly lie in 3D computer vision**, especially in:
 * 3D Representation: Geometric Primitive based 3D Modeling (such as Quadrics and CAD)
@@ -102,8 +103,10 @@ Mentor: [Prof. Lu Fang](https://luvision.net) <!-- and [Prof. Yulan Guo](https:/
 
 # Education
 
+* **Ph.D. student, Computer Science**  
+*Sept. 2024 - Present*, University of Maryland (College Park), US.
 * **M.Phil., Data Science and Information Technology**  
-*Sept. 2021 - Present*, Tsinghua University, China.
+*Sept. 2021 - Jun. 2024*, Tsinghua University, China.
 * **B.Eng., Electronic Information Science and Technology**  
 *Sept. 2017 - Jun. 2021*, Sun Yat-Sen University, China.
 
