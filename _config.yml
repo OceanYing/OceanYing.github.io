@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Haiyang Ying (营海洋)"
   avatar           : "profile2.png"
-  bio              : "Master student at Tsinghua(THU)"
-  location         : "Beijing, China"
+  bio              : "Ph.D. student at UMD"
+  location         : "Maryland, US"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.com/citations?user=1WPAy70AAAAJ&hl=en&oi=ao"
   email            : "yinghy@umd.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
