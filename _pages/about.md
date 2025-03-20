@@ -48,7 +48,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 </td>
 </tr>
 
-<table><tr>
+<tr>
 <td valign="top"> <img src="../images/teaser_twg2.png" alt="Drawing" style="width: 300px;"/> </td>
 <td>            
                 <div><font size="4"><b>OmniSeg3D: Omniversal 3D Segmentation via Hierarchical Contrastive Learning</b>  </font></div>
