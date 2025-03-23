@@ -40,7 +40,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 <td>            
                 <div><font size="4"><b>SketchSplat: 3D Edge Reconstruction via Differentiable Multi-view Sketch Splatting</b>  </font></div>
 		<span><font size="3"><b>Haiyang Ying</b>, Matthias Zwicker<sup>&dagger;</sup></font></span>
-		<div><span><font size="3">(CVPR 2024)</font></span> </div>
+		<div><span><font size="3">(ArXiv 2025)</font></span> </div>
                 <div> 
 			[<a href="https://arxiv.org/abs/2503.14786">ArXiv</a>]
 			[<a>Code(coming soon)</a>] 
