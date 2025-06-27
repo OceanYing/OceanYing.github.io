@@ -26,6 +26,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 ---
 
 # News
+* [Feb. 2024] Our paper [**SketchSplat**](https://arxiv.org/pdf/2503.14786) is accepted by **ICCV 2025**! Code will be available soon!
 * [Feb. 2024] Our paper [**OmniSeg3D**](https://oceanying.github.io/OmniSeg3D/) is accepted by **CVPR 2024** and [**code**](https://github.com/THU-luvision/OmniSeg3D) is available now!
 * [July. 2023] Our paper [**PARF**](https://oceanying.github.io/PARF/) is accepted by **ICCV 2023**!
 * [July. 2022] Our paper [**ParseMVS**](https://dl.acm.org/doi/10.1145/3503161.3547920) is accepted by **ACM MM 2022**!
@@ -40,7 +41,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 <td>            
                 <div><font size="4"><b>SketchSplat: 3D Edge Reconstruction via Differentiable Multi-view Sketch Splatting</b>  </font></div>
 		<span><font size="3"><b>Haiyang Ying</b>, Matthias Zwicker<sup>&dagger;</sup></font></span>
-		<div><span><font size="3">(ArXiv 2025)</font></span> </div>
+		<div><span><font size="3">(ICCV 2025) The International Conference on Computer Vision 2025</font></span> </div>
                 <div> 
 			[<a href="https://arxiv.org/abs/2503.14786">ArXiv</a>]
 			[<a>Code(coming soon)</a>] 
@@ -67,7 +68,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 <td>            
                 <div><font size="4"><b>PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis</b>  </font></div>
 		<span><font size="3"><b>Haiyang Ying</b>, Baowei Jiang, Jinzhi Zhang, Di Xu, Tao Yu<sup>&dagger;</sup>, Qionghai Dai, Fu Fang<sup>&dagger;</sup></font></span>
-		<div><span><font size="3">The International Conference on Computer Vision (ICCV) 2023</font></span> </div>
+		<div><span><font size="3">(ICCV 2023) The International Conference on Computer Vision 2023</font></span> </div>
                 <div> 
 			[<a href="https://arxiv.org/abs/2309.17190">ArXiv</a>]
 			[<a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Ying_PARF_Primitive-Aware_Radiance_Fusion_for_Indoor_Scene_Novel_View_Synthesis_ICCV_2023_paper.pdf">Paper</a>]
