@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="OmniSeg3D: Omniversal 3D Segmentation via Hierarchical Contrastive Learning">
+    <meta name="author" content="Haiyang Ying,
+                                Yixuan Yin,
+                                Jinzhi Zhang,
+                                Fan Wang,
+                                Tao Yu,
+                                Ruqi Huang,
+                                Lu Fang">
+
+    <title>OmniSeg3D: Omniversal 3D Segmentation via Hierarchical Contrastive Learning</title>
+    <!-- Bootstrap core CSS -->
+    <!--link href="bootstrap.min.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+    <!--    <link rel="icon" href="img/favicon.gif" type="image/gif">-->
+</head>
+
+<body>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container"></div>
+    <h2>OmniSeg3D: Omniversal 3D Segmentation via Hierarchical Contrastive Learning</h2>
+    <h3>(<font style="color: rgb(200,36,54)">Accepted to CVPR 2024)</font></h3>
+    <hr>
+    <p class="authors">
+        <a href="https://oceanying.github.io/" target="_blank"> Haiyang Ying</a>,
+        <a target="_blank"> Yixuan Yin</a>,
+        <a target="_blank"> Jinzhi Zhang</a>,
+        <a target="_blank"> Fan Wang</a>,
+        <a href="https://ytrock.com/" target="_blank"> Tao Yu</a>,
+        <a href="https://rqhuang88.github.io/" target="_blank"> Ruqi Huang</a>,
+        <a href="http://luvision.net/" target="_blank"> Lu Fang</a>,
+    </p>
+
+    <p class="authors">
+<!--        <a href="http://www.luvision.net/" target="_blank"> <b>Tsinghua University</b> </a> -->
+       <a> <b>Tsinghua University</b> </a>
+    </p>
+    <div class="btn-group" role="group" aria-label="Top menu">
+        <a class="btn btn-primary" href="https://openaccess.thecvf.com/content/CVPR2024/papers/Ying_OmniSeg3D_Omniversal_3D_Segmentation_via_Hierarchical_Contrastive_Learning_CVPR_2024_paper.pdf" target="_blank"> Paper </a>
+    </div>
+    <div class="btn-group" role="group" aria-label="Top menu">
+        <a class="btn btn-primary" href="https://www.youtube.com/watch?v=yNBpWPGwEEw&t=4s" target="_blank"> Video </a>
+    </div> 
+    <div class="btn-group" role="group" aria-label="Top menu">
+        <a class="btn btn-primary" href="https://github.com/THU-luvision/OmniSeg3D" target="_blank"> Code </a>
+    </div>
+    <div class="btn-group" role="group" aria-label="Top menu">
+        <a class="btn btn-primary" href="https://github.com/OceanYing/OmniSeg3D-GS" target="_blank"> Code (3DGS-based) </a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="section">
+        <h2>Overview</h2>
+        <hr>
+        <img src="img/teaserx.png" title="Interactive 3D Segmentation with the proposed OmniSeg3D" class="center" width="100%">
+        <p>
+            </br>
+            We propose an omniversal 3D segmentation method, which (a) takes as input multi-view, inconsistent, 
+            class-agnostic 2D segmentations,  and then outputs a consistent 3D feature field via a hierarchical contrastive learning framework. 
+            This method supports (b) hierarchical segmentation, (c) multi-object selection, and (d) holistic discretization in an interactive manner. 
+            The feature map is visualized by applying PCA on the original N-D feature, and similar color means high feature similarity. 
+            The score map reveals similarity wrt a chosen point, where <font style="color: rgb(84,36,54)">dark red</font> means high similarity 
+            while <font style="color: rgb(6,42,187)">dark blue</font> means low similarity.
+        </p>
+        <hr>
+        <div class="row align-items-center">
+<!--         <div class="row justify-content-left"> -->
+            <div class="col-sm-12">
+                <h5>Global Discretization Performance</h5>
+                <div class="col justify-content-center text-center">
+                    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                        <source src="img/demo.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p>
+                    With the global consistent 3D feature field optimized by OmniSeg3D, 
+                    we can segment anything without the restrictions on the amount and categories of objects.
+                    In this demo, challenging parts of Tengwang Pavilion, a traditional chinese architecture, 
+                    can be segmented in an interactive manner conveniently.
+                    </br>
+                </p>
+            </div>            
+        </div>
+        <hr>
+    </div>
+
+    <div class="section">
+<!--         <h2>Abstract</h2>
+        <hr>
+        <p>
+            Towards holistic understanding of 3D scenes, a general 3D segmentation method is needed 
+            that can segment diverse objects without restrictions on object quantity or categories, 
+            while also reflecting the inherent hierarchical structure. To achieve this, we propose OmniSeg3D, 
+            an omniversal segmentation method aims for segmenting anything in 3D all at once. 
+            The key insight is to lift multi-view inconsistent 2D segmentations into a consistent 3D feature field 
+            through a hierarchical contrastive learning framework, which is accomplished by two steps. 
+            Firstly, we design a novel hierarchical representation based on category-agnostic 2D segmentations 
+            to model the multi-level relationship among pixels. Secondly, image features rendered from the 3D feature field
+            are clustered at different levels, which can be further drawn closer or pushed apart according to 
+            the hierarchical relationship between different levels. In tackling the challenges posed by inconsistent 2D segmentations, 
+            this framework yields a global consistent 3D feature field, which further enables hierarchical segmentation, 
+            multi-object selection, and global discretization. Extensive experiments demonstrate the effectiveness of our method
+            on high-quality 3D segmentation and accurate hierarchical structure understanding. 
+            A graphical user interface further facilitates flexible interaction for omniversal 3D segmentation.
+            </br>
+        </p> -->
+        <h2>Representation</h2>
+        <hr>
+        <p>
+            We propose a novel hierarchical representation based on the masks given by click-based 2D segmentation methods.
+            (a) For each image, click-based 2D segmentors provide a set of 2D binary masks. 
+            (b) Directly overlapping masks implemented by conventional methods (like SAM) lead to the loss of hierarchical information. 
+            (c) While our patch-based modeling effectively preserves the hierarchical relationship between pixels. 
+            The hierarchical representation of each image includes a patch index map and a correlation matrix, 
+            where the relevance between the anchor patch and other patches is evaluated via a voting strategy.
+            </br>
+        </p>
+        <img src="img/representationx.png" title="Representation" class="center" width="90%">
+        <hr>
+    </div>
+    
+    <div class="section">
+        <h2>Framework</h2>
+        <hr>
+        <p>
+            We propose a framework of hierarchical contrastive learning in 3D space for feature field optimization. 
+            (a) For each input RGB image, we apply (b) 2D hierarchical modeling to get a patch index map and a correlation matrix. 
+            During training, we utilize 
+            (c) NeRF-based (or mesh-based) rendering pipeline to render features from 3D space and apply hierarchical contrastive learning 
+            (d) to the rendered features to optimize the feature field for segmentation.
+            </br>
+        </p>
+        <img src="img/frameworkx.png" title="Framework" class="center" width="100%">
+        <hr>
+        <p>
+            </br>
+        </p>
+    </div>
+        
+    <div class="section">
+        <h2>Interactive Segmentation</h2>
+        <hr>
+        <p>
+            We show that our method is capable of interactive 3D segmentation in real-time, including 
+            hierarchical inference and multi-object selection.
+            </br></br>
+        </p>
+        <div class="row align-items-center">
+<!--         <div class="row justify-content-left"> -->
+            <div class="col-sm-12">
+                <h5>Interactive hierarchical inference - Replica Room-0</h5>
+                <div class="col justify-content-center text-center">
+                    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                        <source src="img/replica-hierarchical1_comp.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p>
+                    </br>
+                </p>
+            </div>
+            <hr>
+            <div class="col-sm-12">
+                <h5>Interactive Multi-object Selection - Tengwang Pavilion</h5>
+                <div class="col justify-content-center text-center">
+                    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                        <source src="img/twg_interactive_demo_comp.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p>
+                    </br>
+                </p>
+            </div>
+            <hr>
+            <div class="col-sm-12">
+                <h5>Interactive Multi-object Selection - Replica Room-0</h5>
+                <div class="col justify-content-center text-center">
+                    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                        <source src="img/demo_seg_replica.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p>
+                    </br>
+                </p>
+            </div>
+<!--             <hr>
+            <div class="col-sm-12">
+                <h5>Global Discretization Performance</h5>
+                <div class="col justify-content-center text-center">
+                    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                        <source src="img/demo.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div> -->
+        </div>
+        <hr>
+        <p>
+            </br>
+        </p>
+    </div>
+
+    
+    <div class="section">
+        <h2>Automatic Discretization</h2>
+        <hr>
+        <p>
+            After optimization, the feature in the 3D field can be distilled onto mesh for automatic global segmentation 
+            without any human intervention as shown below. However, Due to the absence of a clear definition for hierarchy levels, 
+            there is no assurance that the objects will be segmented at the same level by simply clustering features. 
+            To address this issue, text-aligned hierarchical segmentation may be a future direction.
+            </br>
+        </p>
+        <img src="img/limitation.png" title="Automatic Discretization" class="center" width="100%">
+        <hr>
+        <p>
+            </br>
+        </p>
+    </div>
+
+
+<!--     <div class="section">
+        <h2>Sparse Reconstruction</h2>
+        <hr>
+        <p>
+            Given only sparse view as input, PARF shows robust rendering performance thanks to the primitive based hybrid representation.
+            </br>
+        </p>
+        <img src="img/sparsity.png" title="Representation" class="center" width="80%">
+        <hr>
+        <p>
+            </br>
+        </p>
+    </div>
+
+    
+    <div class="section">
+        <h2>Scene Editing</h2>
+        <hr>
+        <p>
+            Our primitive-aware hybrid representation also enables convenient scene editing.
+            </br>
+        </p>
+        <img src="img/Editing.png" title="Representation" class="center" width="80%">
+        <hr>
+        <p>
+            </br>
+        </p>
+    </div> -->
+
+    
+
+    <div class="section">
+        <h2>Conclusion</h2>
+        <hr>
+        <p>
+            In this paper, we propose OmniSeg3D, an omniversal segmentation method that facilitates holistic understanding 
+            of 3D scenes. Leveraging a hierarchical representation and a hierarchical contrastive learning framework, 
+            OmniSeg3D effectively transforms inconsistent 2D segmentations into a globally consistent 3D feature field 
+            while retaining hierarchical information, which enables correct hierarchical 3D sensing and high-quality object 
+            segmentation performance. Besides, variant interactive functionalities including hierarchical inference, 
+            multi-object selection, and global discretization are realized, which may further enable downstream applications 
+            in the field of 3D data annotation, robotics and virtual reality.
+        </p>
+        <hr>
+
+    </div>
+
+    
+<!--     <div class="section">
+        <h2>Bibtex</h2>
+        <hr>
+        <div class="bibtexsection">
+            @inproceedings{Ying:etal:ICCV2023,
+                author = {Haiyang Ying and Baowei Jiang and Jinzhi Zhang and Di Xu and Tao Yu 
+                          and Qionghai Dai and Lu Fang},
+                title = {PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis},
+                booktitle = {Proceedings of the International Conference on Computer Vision (ICCV)},
+                year={2023}
+            }
+        </div>
+    </div> -->
+
+    <hr>
+
+    <footer>
+        <p>Feel free to send any feedback and questions to <a href="https://oceanying.github.io/">Haiyang Ying</a></p>
+    </footer>
+    <footer>
+        <!-- <h6>Acknowledgement</h6> -->
+        <p><small>The website template was borrowed from <a href="https://vsitzmann.github.io/siren/">SIREN</a></small></p>
+    </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
