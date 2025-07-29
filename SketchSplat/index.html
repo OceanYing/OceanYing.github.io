@@ -1,316 +1,448 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-          content="OmniSeg3D: Omniversal 3D Segmentation via Hierarchical Contrastive Learning">
-    <meta name="author" content="Haiyang Ying,
-                                Yixuan Yin,
-                                Jinzhi Zhang,
-                                Fan Wang,
-                                Tao Yu,
-                                Ruqi Huang,
-                                Lu Fang">
+        content="SketchSplat: 3D Edge Reconstruction via Differentiable Multi-view Sketch Splatting">
+    <meta name="keywords"
+        content="3D Gaussian Splatting, Differentiable Rendering, Computer Graphics, 3DGS, Parametric Modeling, Edge Reconstruction">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SketchSplat: 3D Edge Reconstruction via Differentiable Multi-view Sketch Splatting</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5J5JNGRK3L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    <title>OmniSeg3D: Omniversal 3D Segmentation via Hierarchical Contrastive Learning</title>
-    <!-- Bootstrap core CSS -->
-    <!--link href="bootstrap.min.css" rel="stylesheet"-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        gtag('config', 'G-5J5JNGRK3L');
+    </script>
 
-    <!-- Custom styles for this template -->
-    <link href="offcanvas.css" rel="stylesheet">
-    <!--    <link rel="icon" href="img/favicon.gif" type="image/gif">-->
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/favicon.ico">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/index.js"></script>
+    <script src="./static/js/video_comparison.js"></script>
+    <script src="./static/js/script.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
-<div class="jumbotron jumbotron-fluid">
-    <div class="container"></div>
-    <h2>OmniSeg3D: Omniversal 3D Segmentation via Hierarchical Contrastive Learning</h2>
-    <h3>(<font style="color: rgb(200,36,54)">Accepted to CVPR 2024)</font></h3>
-    <hr>
-    <p class="authors">
-        <a href="https://oceanying.github.io/" target="_blank"> Haiyang Ying</a>,
-        <a target="_blank"> Yixuan Yin</a>,
-        <a target="_blank"> Jinzhi Zhang</a>,
-        <a target="_blank"> Fan Wang</a>,
-        <a href="https://ytrock.com/" target="_blank"> Tao Yu</a>,
-        <a href="https://rqhuang88.github.io/" target="_blank"> Ruqi Huang</a>,
-        <a href="http://luvision.net/" target="_blank"> Lu Fang</a>,
-    </p>
 
-    <p class="authors">
-<!--        <a href="http://www.luvision.net/" target="_blank"> <b>Tsinghua University</b> </a> -->
-       <a> <b>Tsinghua University</b> </a>
-    </p>
-    <div class="btn-group" role="group" aria-label="Top menu">
-        <a class="btn btn-primary" href="https://openaccess.thecvf.com/content/CVPR2024/papers/Ying_OmniSeg3D_Omniversal_3D_Segmentation_via_Hierarchical_Contrastive_Learning_CVPR_2024_paper.pdf" target="_blank"> Paper </a>
-    </div>
-    <div class="btn-group" role="group" aria-label="Top menu">
-        <a class="btn btn-primary" href="https://www.youtube.com/watch?v=yNBpWPGwEEw&t=4s" target="_blank"> Video </a>
-    </div> 
-    <div class="btn-group" role="group" aria-label="Top menu">
-        <a class="btn btn-primary" href="https://github.com/THU-luvision/OmniSeg3D" target="_blank"> Code </a>
-    </div>
-    <div class="btn-group" role="group" aria-label="Top menu">
-        <a class="btn btn-primary" href="https://github.com/OceanYing/OmniSeg3D-GS" target="_blank"> Code (3DGS-based) </a>
-    </div>
-</div>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://oceanying.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
 
-<div class="container">
-    <div class="section">
-        <h2>Overview</h2>
-        <hr>
-        <img src="img/teaserx.png" title="Interactive 3D Segmentation with the proposed OmniSeg3D" class="center" width="100%">
-        <p>
-            </br>
-            We propose an omniversal 3D segmentation method, which (a) takes as input multi-view, inconsistent, 
-            class-agnostic 2D segmentations,  and then outputs a consistent 3D feature field via a hierarchical contrastive learning framework. 
-            This method supports (b) hierarchical segmentation, (c) multi-object selection, and (d) holistic discretization in an interactive manner. 
-            The feature map is visualized by applying PCA on the original N-D feature, and similar color means high feature similarity. 
-            The score map reveals similarity wrt a chosen point, where <font style="color: rgb(84,36,54)">dark red</font> means high similarity 
-            while <font style="color: rgb(6,42,187)">dark blue</font> means low similarity.
-        </p>
-        <hr>
-        <div class="row align-items-center">
-<!--         <div class="row justify-content-left"> -->
-            <div class="col-sm-12">
-                <h5>Global Discretization Performance</h5>
-                <div class="col justify-content-center text-center">
-                    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                        <source src="img/demo.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <p>
-                    With the global consistent 3D feature field optimized by OmniSeg3D, 
-                    we can segment anything without the restrictions on the amount and categories of objects.
-                    In this demo, challenging parts of Tengwang Pavilion, a traditional chinese architecture, 
-                    can be segmented in an interactive manner conveniently.
-                    </br>
-                </p>
-            </div>            
-        </div>
-        <hr>
-    </div>
-
-    <div class="section">
-<!--         <h2>Abstract</h2>
-        <hr>
-        <p>
-            Towards holistic understanding of 3D scenes, a general 3D segmentation method is needed 
-            that can segment diverse objects without restrictions on object quantity or categories, 
-            while also reflecting the inherent hierarchical structure. To achieve this, we propose OmniSeg3D, 
-            an omniversal segmentation method aims for segmenting anything in 3D all at once. 
-            The key insight is to lift multi-view inconsistent 2D segmentations into a consistent 3D feature field 
-            through a hierarchical contrastive learning framework, which is accomplished by two steps. 
-            Firstly, we design a novel hierarchical representation based on category-agnostic 2D segmentations 
-            to model the multi-level relationship among pixels. Secondly, image features rendered from the 3D feature field
-            are clustered at different levels, which can be further drawn closer or pushed apart according to 
-            the hierarchical relationship between different levels. In tackling the challenges posed by inconsistent 2D segmentations, 
-            this framework yields a global consistent 3D feature field, which further enables hierarchical segmentation, 
-            multi-object selection, and global discretization. Extensive experiments demonstrate the effectiveness of our method
-            on high-quality 3D segmentation and accurate hierarchical structure understanding. 
-            A graphical user interface further facilitates flexible interaction for omniversal 3D segmentation.
-            </br>
-        </p> -->
-        <h2>Representation</h2>
-        <hr>
-        <p>
-            We propose a novel hierarchical representation based on the masks given by click-based 2D segmentation methods.
-            (a) For each image, click-based 2D segmentors provide a set of 2D binary masks. 
-            (b) Directly overlapping masks implemented by conventional methods (like SAM) lead to the loss of hierarchical information. 
-            (c) While our patch-based modeling effectively preserves the hierarchical relationship between pixels. 
-            The hierarchical representation of each image includes a patch index map and a correlation matrix, 
-            where the relevance between the anchor patch and other patches is evaluated via a voting strategy.
-            </br>
-        </p>
-        <img src="img/representationx.png" title="Representation" class="center" width="90%">
-        <hr>
-    </div>
-    
-    <div class="section">
-        <h2>Framework</h2>
-        <hr>
-        <p>
-            We propose a framework of hierarchical contrastive learning in 3D space for feature field optimization. 
-            (a) For each input RGB image, we apply (b) 2D hierarchical modeling to get a patch index map and a correlation matrix. 
-            During training, we utilize 
-            (c) NeRF-based (or mesh-based) rendering pipeline to render features from 3D space and apply hierarchical contrastive learning 
-            (d) to the rendered features to optimize the feature field for segmentation.
-            </br>
-        </p>
-        <img src="img/frameworkx.png" title="Framework" class="center" width="100%">
-        <hr>
-        <p>
-            </br>
-        </p>
-    </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
         
-    <div class="section">
-        <h2>Interactive Segmentation</h2>
-        <hr>
-        <p>
-            We show that our method is capable of interactive 3D segmentation in real-time, including 
-            hierarchical inference and multi-object selection.
-            </br></br>
-        </p>
-        <div class="row align-items-center">
-<!--         <div class="row justify-content-left"> -->
-            <div class="col-sm-12">
-                <h5>Interactive hierarchical inference - Replica Room-0</h5>
-                <div class="col justify-content-center text-center">
-                    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                        <source src="img/replica-hierarchical1_comp.mp4" type="video/mp4">
-                    </video>
+        
+        <a class="navbar-item" href="https://oceanying.github.io/PARF/">
+            PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis (ICCV 2023)
+        </a>
+        <a class="navbar-item" href="https://oceanying.github.io/OmniSeg3D/">
+            OmniSeg3D: Omniversal 3D Segmentation via Hierarchical Contrastive Learning (CVPR 2024)
+        </a>
+        <a class="navbar-item" href="https://speede3dgs.github.io/">
+            Speedy Deformable 3D Gaussian Splatting: Fast Rendering and Compression of Dynamic Scenes (ArXiv 2025)
+        </a>
+          
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">SketchSplat: 3D Edge Reconstruction via Differentiable Multi-view Sketch Splatting</h1>
+                        <h1 style="font-size:2.0rem; color:rgb(193, 34, 34)"> <b> ICCV 2025 </b> <br></h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a href="https://oceanying.github.io">Haiyang Ying</a>,</span>
+                                <a href="https://www.cs.umd.edu/~zwicker/">Matthias Zwicker</a>
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">University of Maryland, College Park</span>
+                        </div>
+
+                        <!-- <div class="columns is-centered has-text-centered">
+                            <div class="column is-8">
+                                <div class="content">
+                                    <p>
+                                        * denotes equal contribution
+                                    </p>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/pdf/2503.14786"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/pdf/2503.14786"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                                <!-- Code Link. -->
+                                <span class="link-block">
+                                    <a href="https://github.com/oceanying/sketchsplat"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <p>
-                    </br>
-                </p>
             </div>
-            <hr>
-            <div class="col-sm-12">
-                <h5>Interactive Multi-object Selection - Tengwang Pavilion</h5>
-                <div class="col justify-content-center text-center">
-                    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                        <source src="img/twg_interactive_demo_comp.mp4" type="video/mp4">
-                    </video>
+        </div>
+    </section>
+
+    <!-- <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <video id="teaser" autoplay muted loop playsinline width="250%">
+                    <source src="./static/videos/teaser.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section> -->
+
+
+    <section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+        <div class="column is-12">
+            <h3 class="title is-4">
+            SketchSplat achieves state-of-the-art 
+            <span style="color: rgb(36, 143, 200)">accuracy</span>, 
+            <span style="color: rgb(36, 143, 200)">completeness</span>, and 
+            <span style="color: rgb(36, 143, 200)">compactness</span> in 3D parametric edge reconstruction from multi-view 2D edge maps.
+            </h3>
+            
+            <!-- <img id="teaser" src="static/videos/room0.gif" alt="3D curve reconstruction demonstration" style="max-width: 80%; height: auto;" class="teaser-gif"> -->
+
+
+            <div class="columns is-centered" style="margin-top: 1rem;">
+                <div class="column is-11">
+                    <div class="card">
+                        <div class="card-image">
+                            <img id="teaser" src="./static/images/method_names_2.png" style="width: 250%;" />
+                        </div>
+                    </div>
                 </div>
-                <p>
-                    </br>
-                </p>
             </div>
-            <hr>
-            <div class="col-sm-12">
-                <h5>Interactive Multi-object Selection - Replica Room-0</h5>
-                <div class="col justify-content-center text-center">
-                    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                        <source src="img/demo_seg_replica.mp4" type="video/mp4">
-                    </video>
+
+            <div class="columns is-centered" style="margin-top: -2.5rem;">
+                <div class="column is-11">
+                    <div class="card">
+                        <div class="card-image">
+                            <video id="teaser" autoplay muted loop playsinline width="250%">
+                                <source src="./static/videos/8100_stitch_rotate_merge.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
                 </div>
-                <p>
-                    </br>
-                </p>
             </div>
-<!--             <hr>
-            <div class="col-sm-12">
-                <h5>Global Discretization Performance</h5>
-                <div class="col justify-content-center text-center">
-                    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                        <source src="img/demo.mp4" type="video/mp4">
-                    </video>
+
+
+            <h2 class="subtitle is-5 has-text-centered" style="max-width: 100%; margin: 1.5rem auto 0; line-height: 1.6;">
+            <b>SketchSplat</b> is a novel framework that bridges 2D edge images and 3D parametric edges, enabling direct optimization of edge parameters through differentiable multi-view sketch splatting.
+            </h2>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+
+            <!-- GIF 1 (First Row) -->
+            <!-- <div class="columns is-centered" style="margin-top: 1rem;">
+                <div class="column is-11">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                            <img src="static/videos/1204_stitch_rotate.gif" alt="abc1">
+                            </figure>
+                        </div>
+                    </div>
                 </div>
             </div> -->
+
+            <div class="columns is-centered has-text-centered">
+                <!-- <div class="column is-four-fifths"> -->
+                <div class="column is-11">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Edges are one of the most basic parametric primitives to describe structural information in 3D. 
+                            In this paper, we study parametric 3D edge reconstruction from calibrated multi-view images. 
+                            Previous methods usually reconstruct a 3D edge point set from multi-view 2D edge images, and then fit 3D edges to the point set.
+                            However, noise in the point set may cause gaps among fitted edges, and the recovered edges may not align with input multi-view images since the edge fitting depends only on the reconstructed 3D point set.
+                        </p>
+                        <p>
+                            To mitigate these problems, we propose <b>SketchSplat</b>, a method to reconstruct accurate, complete, and compact 3D edges via differentiable multi-view sketch splatting. We represent 3D edges as sketches, which are parametric lines and curves defined by attributes including control points, scales, and opacity. During reconstruction, we iteratively sample Gaussian points from a set of sketches and rasterize the Gaussians onto 2D edge images. 
+                            Then the gradient of the image loss can be back-propagated to optimize the sketch attributes. 
+                            Our method bridges 2D edge images and 3D edges in a differentiable manner, which ensures that 3D edges align well with 2D images and leads to accurate and complete results. 
+                            We also propose a series of adaptive topological operations to reduce redundant edges and apply them along with the sketch optimization, yielding a more compact reconstruction.
+                            Finally, we contribute an accurate 2D edge detector that improves the performance of both ours and existing methods.
+                        </p>
+                        <p>
+                            Experiments show that our method achieves a new state-of-the-art accuracy, completeness, and compactness on ABC-NEF dataset. SketchSplat is the first method to achieve both accuracy (A) and completeness (C) below 7.0mm, while also exceeding 90% in recall (5mm), precision (5mm), and F-score (5mm).
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <hr>
-        <p>
-            </br>
-        </p>
-    </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <!-- <div class="column is-four-fifths"> -->
+                <div class="column is-11">
+                    <h2 class="title is-3">Method</h2>
+                        <div class="content has-text-justified">
+
+                            <img src="static/images/pipeline_v3.png" alt="Pipeline"
+                                style="margin-bottom: 1.5rem; max-width: 100%; height: auto;">
+                            <p>
+                                <b>Overview of SketchSplat pipeline</b>: (a) We extract edge images using a novel approach. (b) We then obtain initial edge points using EdgeGS and (c) fit parametric sketches defined as lines and third-order Bezier curves. The core step of our approach is to optimize the sketches by (d) sampling and rasterizing them in a differentiable manner and back-propagating gradients of the image loss to (e) sketch parameters. In addition, during training we apply (f) a set of topological operations to improve compactness and connectivity of the reconstructed sketches. (g) After training, we take the optimized geometric parameters of sketches as the reconstructed 3D edges.
+                            </p>
+                        </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-11">
+                    <h2 class="title is-3">Qualitative Results</h2>
+
+                    <h3 class="title is-4">ABC-NEF Dataset</h3>
+
+                        <div class="columns is-centered" style="margin-top: 1rem;">
+                            <div class="column is-11">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img id="teaser" src="./static/images/method_names_2.png" style="width: 250%;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns is-centered" style="margin-top: -1rem;">
+                            <div class="column is-11">
+                                <div class="card">
+                                    <div class="card-image">
+                                    <!-- <div class="hero-body"> -->
+                                        <video id="teaser" autoplay muted loop playsinline width="250%">
+                                            <source src="./static/videos/1204_stitch_rotate_merge.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns is-centered" style="margin-top: -1rem;">
+                            <div class="column is-11">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <video id="teaser" autoplay muted loop playsinline width="250%">
+                                            <source src="./static/videos/7192_stitch_rotate_merge.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="columns is-centered" style="margin-top: -1rem;">
+                            <div class="column is-11">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <video id="teaser" autoplay muted loop playsinline width="250%">
+                                            <source src="./static/videos/8750_stitch_rotate_merge.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content has-text-justified">
+                            <p>
+                                <b>Visualization results on ABC-NEF</b>. ompared to the baselines, our method achieves superior accuracy and completeness, along with a favorable balance between completeness and compactness.
+                            </p>
+                        </div>
+
+
+                    <h3 class="title is-4">DTU Dataset</h3>
+
+                        <img src="static/images/visual_DTU.png" alt="Ablation"
+                            style="margin-bottom: 1.5rem; max-width: 100%; height: auto;">
+
+                        <div class="content has-text-justified">
+                            <p>
+                                <b>Visualization results on DTU</b>. Our method achieves overall comparable visual quality with EdgeGS and shows smoother results. We also use the least number of edges.
+                            </p>
+                        </div>
+
+
+                    <h3 class="title is-4">Replica Dataset</h3>
+
+                        <img src="static/images/visual_Replica.png" alt="Ablation"
+                            style="margin-bottom: 1.5rem; max-width: 100%; height: auto;">
+                        
+                        <div class="content has-text-justified">
+                            <p>
+                                <b>Visualization results on Replica</b>. Our method achieves overall comparable visual quality with EdgeGS and costs the least number of edges, which validates the compactness of our method.
+                            </p>
+                        </div>
+                </div>
+            </div>
+    </section>
 
     
-    <div class="section">
-        <h2>Automatic Discretization</h2>
-        <hr>
-        <p>
-            After optimization, the feature in the 3D field can be distilled onto mesh for automatic global segmentation 
-            without any human intervention as shown below. However, Due to the absence of a clear definition for hierarchy levels, 
-            there is no assurance that the objects will be segmented at the same level by simply clustering features. 
-            To address this issue, text-aligned hierarchical segmentation may be a future direction.
-            </br>
-        </p>
-        <img src="img/limitation.png" title="Automatic Discretization" class="center" width="100%">
-        <hr>
-        <p>
-            </br>
-        </p>
-    </div>
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <!-- <div class="column is-four-fifths"> -->
+                <div class="column is-11">
+                    <h2 class="title is-3">Quantitative Results</h2>
+                        <div class="content has-text-justified">
+
+                        <img src="static/images/table_abc.png" alt="Quantitative Results"
+                            style="margin-bottom: 1.5rem; max-width: 100%; height: auto;">
+                        
+                        <p>
+                            <b>Quantitative evaluation on ABC-NEF dataset</b>. Our method achieves the state-of-the-art performance on most metrics. A: Accuracy (mm), C: Completeness (mm), Rx: Recall (threshold x mm), Px: Precision (mm), Fx: F-score (mm). <span style="color: rgb(36, 143, 200)"><b>SketchSplat is the first method to achieve both accuracy (A) and completeness (C) below 7.0mm, while also exceeding 90% in recall (5mm), precision (5mm), and F-score (5mm)</b></span>.
+                        </p>
+
+                </div>
+            </div>
+    </section>
 
 
-<!--     <div class="section">
-        <h2>Sparse Reconstruction</h2>
-        <hr>
-        <p>
-            Given only sparse view as input, PARF shows robust rendering performance thanks to the primitive based hybrid representation.
-            </br>
-        </p>
-        <img src="img/sparsity.png" title="Representation" class="center" width="80%">
-        <hr>
-        <p>
-            </br>
-        </p>
-    </div>
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <!-- <div class="column is-four-fifths"> -->
+                <div class="column is-11">
+                    <h2 class="title is-3">Ablation Study</h2>
+                        <div class="content has-text-justified">
 
-    
-    <div class="section">
-        <h2>Scene Editing</h2>
-        <hr>
-        <p>
-            Our primitive-aware hybrid representation also enables convenient scene editing.
-            </br>
-        </p>
-        <img src="img/Editing.png" title="Representation" class="center" width="80%">
-        <hr>
-        <p>
-            </br>
-        </p>
-    </div> -->
+                        <img src="static/images/ablation.png" alt="Ablation"
+                            style="margin-bottom: 1.5rem; max-width: 100%; height: auto;">
+                        
+                        <div class="content has-text-justified">
+                            <p>
+                                <b>Ablation</b>. This figure show results of ablation study on the key components of SketchSplat. Removing key components leads to noisier or redundant reconstructions.
+                            </p>
+                        </div>
+                </div>
+            </div>
+    </section>
 
-    
-
-    <div class="section">
-        <h2>Conclusion</h2>
-        <hr>
-        <p>
-            In this paper, we propose OmniSeg3D, an omniversal segmentation method that facilitates holistic understanding 
-            of 3D scenes. Leveraging a hierarchical representation and a hierarchical contrastive learning framework, 
-            OmniSeg3D effectively transforms inconsistent 2D segmentations into a globally consistent 3D feature field 
-            while retaining hierarchical information, which enables correct hierarchical 3D sensing and high-quality object 
-            segmentation performance. Besides, variant interactive functionalities including hierarchical inference, 
-            multi-object selection, and global discretization are realized, which may further enable downstream applications 
-            in the field of 3D data annotation, robotics and virtual reality.
-        </p>
-        <hr>
-
-    </div>
-
-    
-<!--     <div class="section">
-        <h2>Bibtex</h2>
-        <hr>
-        <div class="bibtexsection">
-            @inproceedings{Ying:etal:ICCV2023,
-                author = {Haiyang Ying and Baowei Jiang and Jinzhi Zhang and Di Xu and Tao Yu 
-                          and Qionghai Dai and Lu Fang},
-                title = {PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis},
-                booktitle = {Proceedings of the International Conference on Computer Vision (ICCV)},
-                year={2023}
-            }
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@article{ying2025sketchsplat,
+    title   = {SketchSplat: 3D Edge Reconstruction via Differentiable Multi-view Sketch Splatting},
+    author  = {Ying, Haiyang and Zwicker, Matthias},
+    journal = {arXiv preprint arXiv:2503.14786},
+    year    = {2025},
+    url     = {https://oceanying.github.io/SketchSplat/}
+}</code></pre>
         </div>
-    </div> -->
+    </section>
 
-    <hr>
-
-    <footer>
-        <p>Feel free to send any feedback and questions to <a href="https://oceanying.github.io/">Haiyang Ying</a></p>
+    <br>
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <a class="icon-link" href="https://arxiv.org/pdf/2506.07917" class="external-link">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+                <a class="icon-link" href="https://github.com/tuallen/speede3dgs/tree/main" class="external-link"
+                    disabled>
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This research is based in part upon work supported by the Office of the Director of National  Intelligence (ODNI), Intelligence Advanced Research Projects Activity (IARPA), via IARPA R\&D Contract No. 140D0423C0076. The views and conclusions contained herein are those of the authors and should not be interpreted as necessarily representing the official policies or endorsements, either expressed or implied, of the ODNI, IARPA, or the U.S. Government. The U.S. Government is authorized to reproduce and distribute reprints for Governmental purposes notwithstanding any copyright annotation thereon.
+                        </p>
+                    </div>
+                    <div class="content has-text-centered">
+                        <p>
+                            We thank the authors of <a rel="nerfies"
+                                href="https://github.com/nerfies/nerfies.github.io/tree/main">Nerfies</a>
+                            for generously open-sourcing the templates used in this website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-    <footer>
-        <!-- <h6>Acknowledgement</h6> -->
-        <p><small>The website template was borrowed from <a href="https://vsitzmann.github.io/siren/">SIREN</a></small></p>
-    </footer>
-</div>
-
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
