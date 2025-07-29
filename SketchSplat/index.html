@@ -172,21 +172,14 @@
             <span style="color: rgb(36, 143, 200)">completeness</span>, and 
             <span style="color: rgb(36, 143, 200)">compactness</span> in 3D parametric edge reconstruction from multi-view 2D edge maps.
             </h3>
+        </div>
+        </div>
+    </div>
+    </section>
             
             <!-- <img id="teaser" src="static/videos/room0.gif" alt="3D curve reconstruction demonstration" style="max-width: 80%; height: auto;" class="teaser-gif"> -->
 
-
-            <div class="columns is-centered" style="margin-top: 1rem;">
-                <div class="column is-11">
-                    <div class="card">
-                        <div class="card-image">
-                            <img id="teaser" src="./static/images/method_names_2.png" style="width: 250%;" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="columns is-centered" style="margin-top: -2.5rem;">
+            <!-- <div class="columns is-centered" style="margin-top: 1rem;">
                 <div class="column is-11">
                     <div class="card">
                         <div class="card-image">
@@ -196,26 +189,78 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="columns is-centered" style="margin-top: -2.5rem;">
-                <div class="column is-11">
-                    <div class="card">
-                        <div class="card-image">
-                            <img id="teaser" src="./static/images/colormap.png" style="width: 40%;" />
-                        </div>
-                    </div>
+    <section class="hero">
+        <div class="hero-body">
+            <!-- <div class="container is-max-desktop content has-text-centered">
+                <h2 class="title is-3 mb-5">More Results</h2>
+            </div> -->
+
+            <div id="results-carousel" class="carousel results-carousel">
+                <div class="item item-8100">
+                    <video poster="" id="8100" autoplay controls muted loop playsinline height="100%">
+                        <source src="static/videos/8100_stitch_rotate_merge.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-0843">
+                    <video poster="" id="0843" autoplay controls muted loop playsinline height="100%">
+                        <source src="static/videos/0843_stitch_rotate_merge.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-1204">
+                    <video poster="" id="1204" autoplay controls muted loop playsinline height="100%">
+                        <source src="static/videos/1204_stitch_rotate_merge.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-6053">
+                    <video poster="" id="6053" autoplay controls muted loop playsinline height="100%">
+                        <source src="static/videos/6053_stitch_rotate_merge.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-7192">
+                    <video poster="" id="7192" autoplay controls muted loop playsinline height="100%">
+                        <source src="static/videos/7192_stitch_rotate_merge.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-8750">
+                    <video poster="" id="8750" autoplay controls muted loop playsinline height="100%">
+                        <source src="static/videos/8750_stitch_rotate_merge.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-9886">
+                    <video poster="" id="9886" autoplay controls muted loop playsinline height="100%">
+                        <source src="static/videos/9886_stitch_rotate_merge.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
 
+             <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-12">
+                        <h2 class="subtitle is-5 has-text-centered" style="max-width: 100%; margin: 1.5rem auto 0; line-height: 1.6;">
+                        <!-- <b>SketchSplat</b> is a novel framework that bridges 2D edge images and 3D parametric edges, enabling direct optimization of edge parameters through differentiable multi-view sketch splatting.  -->
+                        <b>Visualization results on ABC-NEF</b>. Compared to the baselines, our method achieves superior accuracy and completeness, along with a favorable balance between completeness and compactness.
 
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+        <div class="column is-12">
             <h2 class="subtitle is-5 has-text-centered" style="max-width: 100%; margin: 1.5rem auto 0; line-height: 1.6;">
             <b>SketchSplat</b> is a novel framework that bridges 2D edge images and 3D parametric edges, enabling direct optimization of edge parameters through differentiable multi-view sketch splatting.
             </h2>
         </div>
         </div>
     </div>
-    </section>
+    </section> -->
 
     <section class="section">
         <div class="container is-max-desktop">
@@ -252,7 +297,7 @@
                             Finally, we contribute an accurate 2D edge detector that improves the performance of both ours and existing methods.
                         </p>
                         <p>
-                            Experiments show that our method achieves a new state-of-the-art accuracy, completeness, and compactness on ABC-NEF dataset. SketchSplat is the first method to achieve both accuracy (A) and completeness (C) below 7.0mm, while also exceeding 90% in recall (5mm), precision (5mm), and F-score (5mm).
+                            Experiments show that our method achieves a new state-of-the-art accuracy, completeness, and compactness on ABC-NEF dataset. <b>SketchSplat is the first method to achieve both accuracy (A) and completeness (C) below 7.0mm, while also exceeding 90% in recall (5mm), precision (5mm), and F-score (5mm)</b>.
                         </p>
                     </div>
                 </div>
@@ -266,12 +311,30 @@
                 <!-- <div class="column is-four-fifths"> -->
                 <div class="column is-11">
                     <h2 class="title is-3">Method</h2>
+                        
+                    <div style="margin-bottom: 2rem;"></div>
+                        
+                        <h3 class="title is-5 has-text-left">Framework</h3>
                         <div class="content has-text-justified">
 
                             <img src="static/images/pipeline_v3.png" alt="Pipeline"
                                 style="margin-bottom: 1.5rem; max-width: 100%; height: auto;">
                             <p>
                                 <b>Overview of SketchSplat pipeline</b>: (a) We extract edge images using a novel approach. (b) We then obtain initial edge points using EdgeGS and (c) fit parametric sketches defined as lines and third-order Bezier curves. The core step of our approach is to optimize the sketches by (d) sampling and rasterizing them in a differentiable manner and back-propagating gradients of the image loss to (e) sketch parameters. In addition, during training we apply (f) a set of topological operations to improve compactness and connectivity of the reconstructed sketches. (g) After training, we take the optimized geometric parameters of sketches as the reconstructed 3D edges.
+                            </p>
+                        </div>
+
+                    <h3 class="title is-5 has-text-left">New 2D edge detector</h3>
+                        <div class="content has-text-justified">
+                            <div style="text-align: center; margin-bottom: -1rem;">
+
+                                <img src="static/images/2D_detector.png" alt="Ablation"
+                                    style="margin-bottom: 1.5rem; max-width: 60%; height: auto;">
+                            </div>
+                        
+                        <div class="content has-text-justified">
+                            <p>
+                                Visual comparison of different edge detection methods. Our <b>2DGS-SN</b> provides more accurate edge detections results that align better with the object boundaries.
                             </p>
                         </div>
                 </div>
@@ -285,23 +348,12 @@
                 <div class="column is-11">
                     <h2 class="title is-3">Qualitative Results</h2>
 
-                    <h3 class="title is-4">ABC-NEF Dataset</h3>
-
-                        <div class="columns is-centered" style="margin-top: 1rem;">
-                            <div class="column is-11">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <img id="teaser" src="./static/images/method_names_2.png" style="width: 250%;" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- <h3 class="title is-5 has-text-left">ABC-NEF Dataset</h3>
 
                         <div class="columns is-centered" style="margin-top: -1rem;">
                             <div class="column is-11">
                                 <div class="card">
                                     <div class="card-image">
-                                    <!-- <div class="hero-body"> -->
                                         <video id="teaser" autoplay muted loop playsinline width="250%">
                                             <source src="./static/videos/1204_stitch_rotate_merge.mp4" type="video/mp4">
                                         </video>
@@ -335,24 +387,14 @@
                             </div>
                         </div>
 
-                        <div class="columns is-centered" style="margin-top: -1.5rem;">
-                            <div class="column is-11">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <img id="teaser" src="./static/images/colormap.png" style="width: 40%;" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="content has-text-justified">
                             <p>
                                 <b>Visualization results on ABC-NEF</b>. ompared to the baselines, our method achieves superior accuracy and completeness, along with a favorable balance between completeness and compactness.
                             </p>
-                        </div>
+                        </div> -->
 
 
-                    <h3 class="title is-4">DTU Dataset</h3>
+                    <h3 class="title is-5 has-text-left">DTU Dataset</h3>
 
                         <img src="static/images/visual_DTU.png" alt="Ablation"
                             style="margin-bottom: 1.5rem; max-width: 100%; height: auto;">
@@ -362,9 +404,11 @@
                                 <b>Visualization results on DTU</b>. Our method achieves overall comparable visual quality with EdgeGS and shows smoother results. We also use the least number of edges.
                             </p>
                         </div>
+                    
+                        <div style="margin-bottom: 3rem;"></div>
 
 
-                    <h3 class="title is-4">Replica Dataset</h3>
+                    <h3 class="title is-5 has-text-left">Replica Dataset</h3>
 
                         <img src="static/images/visual_Replica.png" alt="Ablation"
                             style="margin-bottom: 1.5rem; max-width: 100%; height: auto;">
@@ -387,6 +431,8 @@
                     <h2 class="title is-3">Quantitative Results</h2>
                         <div class="content has-text-justified">
 
+                        <div style="margin-bottom: 2rem;"></div>
+
                         <img src="static/images/table_abc.png" alt="Quantitative Results"
                             style="margin-bottom: 1.5rem; max-width: 100%; height: auto;">
                         
@@ -405,14 +451,38 @@
                 <!-- <div class="column is-four-fifths"> -->
                 <div class="column is-11">
                     <h2 class="title is-3">Ablation Study</h2>
-                        <div class="content has-text-justified">
+
+                    <div style="margin-bottom: 2rem;">
+                    </div>
+
+                    <h3 class="title is-5 has-text-left">Ablation on Core Contributions</h3>
 
                         <img src="static/images/ablation.png" alt="Ablation"
                             style="margin-bottom: 1.5rem; max-width: 100%; height: auto;">
                         
                         <div class="content has-text-justified">
+
+                            <div style="margin-bottom: 3rem;">
+                                <p>
+                                    <b>Ablation</b>. This figure show results of ablation study on the key components of SketchSplat. Removing key components leads to noisier or redundant reconstructions.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    <h3 class="title is-5 has-text-left">Alternative 2D Edge Detector</h3>
+                        <div class="content has-text-justified">
+                            <div style="text-align: center; margin-bottom: -1rem;">
+
+                                <img src="static/images/ablation_2d_detector.png" alt="Ablation"
+                                    style="margin-bottom: 1.5rem; max-width: 60%; height: auto;">
+                            </div>
+                        
                             <p>
-                                <b>Ablation</b>. This figure show results of ablation study on the key components of SketchSplat. Removing key components leads to noisier or redundant reconstructions.
+                                <b>
+                                    Ablation on 2D edge detector. We ablate the depth prediction methods (2DGS, DepthPro). 2DGS shows better performance since it produces multi-view consistent depth maps.
+                                </b>
+                                The core insight of our new 2D edge detector (2DGS-SN) is that geometric cues (e.g., depth and normal) offer higher pixel-level accuracy and are thus more robust than pure learning-based edge detectors (e.g. DexiNed, PiDiNeT). Based on this observation, we demonstrate that other geometry estimation methods such as DepthPro can be alternative components of our 2DGS-SN.
+                                We replace 2DGS depth maps with the ones from DepthPro and test its performance. DepthPro is significantly faster than 2DGS, as it avoids per-scene optimization. However, its accuracy is lower due to unstable edge detection caused by multi-view inconsistent depth scales. In contrast, 2DGS is slower but provides depth maps with a multi-view consistent scale, therefore a single threshold is sufficient to detect consistent edges. Choosing 2DGS (higher accuracy) vs. DepthPro (faster) is therefore a trade-off between efficiency and quality.
                             </p>
                         </div>
                 </div>
