@@ -26,7 +26,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 ---
 
 # News
-* [Feb. 2024] Our paper [**SketchSplat**](https://arxiv.org/pdf/2503.14786) is accepted by **ICCV 2025**! Code will be available soon!
+* [June. 2025] Our paper [**SketchSplat**](https://arxiv.org/pdf/2503.14786) is accepted by **ICCV 2025**! Code will be available soon!
 * [Feb. 2024] Our paper [**OmniSeg3D**](https://oceanying.github.io/OmniSeg3D/) is accepted by **CVPR 2024** and [**code**](https://github.com/THU-luvision/OmniSeg3D) is available now!
 * [July. 2023] Our paper [**PARF**](https://oceanying.github.io/PARF/) is accepted by **ICCV 2023**!
 * [July. 2022] Our paper [**ParseMVS**](https://dl.acm.org/doi/10.1145/3503161.3547920) is accepted by **ACM MM 2022**!
@@ -44,6 +44,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 		<div><span><font size="3">(ICCV 2025) The International Conference on Computer Vision 2025</font></span> </div>
                 <div> 
 			[<a href="https://arxiv.org/abs/2503.14786">ArXiv</a>]
+			[<a href="https://oceanying.github.io/SketchSplat/">Project Page</a>]
 			[<a>Code(coming soon)</a>] 
 		</div>
 </td>
