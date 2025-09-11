@@ -36,7 +36,24 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 # Publications
 
 
-<table><tr>
+<table>
+
+<tr>
+<td valign="top"> <img src="../images/speede3dgs.png" alt="Drawing" style="width: 300px;"/> </td>
+<td>            
+                <div><font size="4"><b>Speedy Deformable 3D Gaussian Splatting: Fast Rendering and Compression of Dynamic Scenes</b>  </font></div>
+		<span><font size="3">Allen Tu*, <b>Haiyang Ying</b>*, Alex Hanson Yonghan Lee, Tom Goldstein Matthias Zwicker</font></span>
+		<div><span><font size="3">(ArXiv 2025)</font></span> </div>
+                <div> 
+			[<a href="https://arxiv.org/abs/2506.07917">ArXiv</a>]
+			[<a href="https://speede3dgs.github.io/">Project Page</a>]
+			[<a href="https://github.com/tuallen/speede3dgs/tree/main">Code</a>]
+			<!-- [<a>Code(coming soon)</a>]  -->
+		</div>
+</td>
+</tr>
+ 
+<tr>
 <td valign="top"> <img src="../images/sketchsplat.png" alt="Drawing" style="width: 300px;"/> </td>
 <td>            
                 <div><font size="4"><b>SketchSplat: 3D Edge Reconstruction via Differentiable Multi-view Sketch Splatting</b>  </font></div>
