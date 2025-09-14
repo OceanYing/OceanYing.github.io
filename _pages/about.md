@@ -62,7 +62,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
                 <div> 
 			[<a href="https://arxiv.org/abs/2503.14786">ArXiv</a>]
 			[<a href="https://oceanying.github.io/SketchSplat/">Project Page</a>]
-			<!-- [<a>Code(coming soon)</a>]  -->
+			[<a href="https://github.com/OceanYing/sketchsplat">Code</a>] 
 		</div>
 </td>
 </tr>
