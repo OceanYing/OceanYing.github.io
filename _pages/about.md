@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 # About Me
-I'm now a first-year PhD student in computer science at the University of Maryland (College Park), working with [Prof. Matthias Zwicker](https://www.cs.umd.edu/~zwicker/).
+I'm now a second-year PhD student in computer science at the University of Maryland (College Park), working with [Prof. Matthias Zwicker](https://www.cs.umd.edu/~zwicker/).
 Before that, I got my master's degree in Data Science and Information Technology at TBSI, Tsinghua University(THU), supervised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU), <!-- advised by [Prof. Yulan Guo](http://www.yulanguo.cn/)--> and obtained my bachelor's degree in 2021. 
 
 **My research interests mainly lie in 3D computer vision**, especially in:
