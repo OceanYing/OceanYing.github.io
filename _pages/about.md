@@ -42,7 +42,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 <tr>
 <td valign="top"> <img src="../images/speede3dgs.png" alt="Drawing" style="width: 300px;"/> </td>
 <td>            
-                <div><font size="4"><b>Speedy Deformable 3D Gaussian Splatting: Fast Rendering and Compression of Dynamic Scenes</b>  </font></div>
+                <div><font size="4"><b>SpeeDe3DGS: Speedy Deformable 3D Gaussian Splatting with Temporal Pruning and Motion Grouping</b>  </font></div>
 		<span><font size="3">Allen Tu*, <b>Haiyang Ying</b>*, Alex Hanson Yonghan Lee, Tom Goldstein Matthias Zwicker</font></span>
 		<div><span><font size="3">(CVPR 2026)</font></span> </div>
                 <div> 
