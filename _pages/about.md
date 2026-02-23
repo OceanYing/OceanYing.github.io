@@ -26,10 +26,11 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 ---
 
 # News
-* [June. 2025] Our paper [**SketchSplat**](https://arxiv.org/pdf/2503.14786) is accepted by **ICCV 2025** and [**code**](https://github.com/OceanYing/sketchsplat) is available now!
-* [Feb. 2024] Our paper [**OmniSeg3D**](https://oceanying.github.io/OmniSeg3D/) is accepted by **CVPR 2024** and [**code**](https://github.com/THU-luvision/OmniSeg3D) is available now!
-* [July. 2023] Our paper [**PARF**](https://oceanying.github.io/PARF/) is accepted by **ICCV 2023**!
-* [July. 2022] Our paper [**ParseMVS**](https://dl.acm.org/doi/10.1145/3503161.3547920) is accepted by **ACM MM 2022**!
+* [Feb. 2026] Our paper [**SpeeDe3DGS**](https://arxiv.org/abs/2506.07917) is accepted to **CVPR 2026**! Check our [**code**](https://speede3dgs.github.io) for super-fast 4DGS!
+* [Jun. 2025] Our paper [**SketchSplat**](https://oceanying.github.io/SketchSplat/) is accepted to **ICCV 2025**! Welcome to try our [**SOTA Solution**](https://github.com/OceanYing/sketchsplat) for 3D edge recon!
+* [Feb. 2024] Our paper [**OmniSeg3D**](https://oceanying.github.io/OmniSeg3D/) is accepted to **CVPR 2024** and [**code**](https://github.com/THU-luvision/OmniSeg3D) is available now!
+* [Jul. 2023] Our paper [**PARF**](https://oceanying.github.io/PARF/) is accepted to **ICCV 2023**!
+* [Jul. 2022] Our paper [**ParseMVS**](https://dl.acm.org/doi/10.1145/3503161.3547920) is accepted to **ACM MM 2022**!
 
 ---
 
@@ -43,12 +44,11 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 <td>            
                 <div><font size="4"><b>Speedy Deformable 3D Gaussian Splatting: Fast Rendering and Compression of Dynamic Scenes</b>  </font></div>
 		<span><font size="3">Allen Tu*, <b>Haiyang Ying</b>*, Alex Hanson Yonghan Lee, Tom Goldstein Matthias Zwicker</font></span>
-		<div><span><font size="3">(ArXiv 2025)</font></span> </div>
+		<div><span><font size="3">(CVPR 2026)</font></span> </div>
                 <div> 
 			[<a href="https://arxiv.org/abs/2506.07917">ArXiv</a>]
 			[<a href="https://speede3dgs.github.io/">Project Page</a>]
 			[<a href="https://github.com/tuallen/speede3dgs/tree/main">Code</a>]
-			<!-- [<a>Code(coming soon)</a>]  -->
 		</div>
 </td>
 </tr>
@@ -60,6 +60,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 		<span><font size="3"><b>Haiyang Ying</b>, Matthias Zwicker<sup>&dagger;</sup></font></span>
 		<div><span><font size="3">(ICCV 2025) The International Conference on Computer Vision 2025</font></span> </div>
                 <div> 
+			[<a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Ying_SketchSplat_3D_Edge_Reconstruction_via_Differentiable_Multi-view_Sketch_Splatting_ICCV_2025_paper.pdf">Paper</a>]
 			[<a href="https://arxiv.org/abs/2503.14786">ArXiv</a>]
 			[<a href="https://oceanying.github.io/SketchSplat/">Project Page</a>]
 			[<a href="https://github.com/OceanYing/sketchsplat">Code</a>] 
@@ -74,6 +75,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 		<span><font size="3"><b>Haiyang Ying</b>, Yixuan Yin, Jinzhi Zhang, Fan Wang, Tao Yu, Ruqi Huang, Fu Fang<sup>&dagger;</sup></font></span>
 		<div><span><font size="3">(CVPR 2024)</font></span> </div>
                 <div> 
+			[<a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Ying_OmniSeg3D_Omniversal_3D_Segmentation_via_Hierarchical_Contrastive_Learning_CVPR_2024_paper.pdf">Paper</a>]
 			[<a href="https://arxiv.org/abs/2311.11666">ArXiv</a>]
 			[<a href="https://oceanying.github.io/OmniSeg3D/">Project Page</a>]
 			[<a href="https://github.com/THU-luvision/OmniSeg3D">Code</a>] 
@@ -88,8 +90,8 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 		<span><font size="3"><b>Haiyang Ying</b>, Baowei Jiang, Jinzhi Zhang, Di Xu, Tao Yu<sup>&dagger;</sup>, Qionghai Dai, Fu Fang<sup>&dagger;</sup></font></span>
 		<div><span><font size="3">(ICCV 2023) The International Conference on Computer Vision 2023</font></span> </div>
                 <div> 
-			[<a href="https://arxiv.org/abs/2309.17190">ArXiv</a>]
 			[<a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Ying_PARF_Primitive-Aware_Radiance_Fusion_for_Indoor_Scene_Novel_View_Synthesis_ICCV_2023_paper.pdf">Paper</a>]
+			[<a href="https://arxiv.org/abs/2309.17190">ArXiv</a>]
 			[<a href="https://oceanying.github.io/PARF/">Project Page</a>]
 			[<a>Code(coming soon)</a>] 
 		</div>
@@ -188,11 +190,15 @@ Mentor: [Prof. Lu Fang](https://luvision.net) <!-- and [Prof. Yulan Guo](https:/
 ---
 
 # Teaching Experiences
-* ***Fall 2022*, Teaching Assistant, Tsinghua University.**  
-Course: Media and Cognition (English)
+* ***Fall 2023*, Teaching Assistant, Tsinghua University.**  
+Course: Machine Vision (English)
 
 * ***Fall 2023*, Teaching Assistant, Tsinghua University.**  
 Course: Machine Vision (English)
+
+* ***Fall 2022*, Teaching Assistant, Tsinghua University.**  
+Course: Media and Cognition (English)
+
 
 ---
 
