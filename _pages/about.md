@@ -9,11 +9,11 @@ redirect_from:
 ---
 
 # About Me
-I'm now a second-year PhD student in computer science at the University of Maryland (College Park), working with [Prof. Matthias Zwicker](https://www.cs.umd.edu/~zwicker/).
-Before that, I got my master's degree in Data Science and Information Technology at TBSI, Tsinghua University(THU), supervised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU), <!-- advised by [Prof. Yulan Guo](http://www.yulanguo.cn/)--> and obtained my bachelor's degree in 2021. 
+I'm now a third-year PhD student in computer science at the University of Maryland (College Park), working with [Prof. Matthias Zwicker](https://www.cs.umd.edu/~zwicker/).
+Before that, I got my master's degree in Data Science and Information Technology at TBSI, Tsinghua University(THU), supervised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU), and obtained my bachelor's degree in 2021. 
 
 **My research interests mainly lie in 3D computer vision**, especially in:
-* 3D Representation: Geometric Primitive based 3D Modeling (such as Quadrics and CAD)
+* 3D Representation: Geometric Primitive based 3D Modeling (such as CAD)
 * 3D Reconstruction: Semantic-aware Reconstruction and Rendering from images and video
 * 3D Understanding: Hierarchical 3D Scene Parsing and Navigation
 <!-- * **3D Scene Generation** -->
@@ -72,7 +72,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 <td valign="top"> <img src="../images/teaser_twg2.png" alt="Drawing" style="width: 300px;"/> </td>
 <td>            
                 <div><font size="4"><b>OmniSeg3D: Omniversal 3D Segmentation via Hierarchical Contrastive Learning</b>  </font></div>
-		<span><font size="3"><b>Haiyang Ying</b>, Yixuan Yin, Jinzhi Zhang, Fan Wang, Tao Yu, Ruqi Huang, Fu Fang<sup>&dagger;</sup></font></span>
+		<span><font size="3"><b>Haiyang Ying</b>, Yixuan Yin, Jinzhi Zhang, Fan Wang, Tao Yu, Ruqi Huang, Lu Fang<sup>&dagger;</sup></font></span>
 		<div><span><font size="3">(CVPR 2024)</font></span> </div>
                 <div> 
 			[<a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Ying_OmniSeg3D_Omniversal_3D_Segmentation_via_Hierarchical_Contrastive_Learning_CVPR_2024_paper.pdf">Paper</a>]
@@ -87,7 +87,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 <td valign="top"> <img src="../images/parf.png" alt="Drawing" style="width: 300px;"/> </td>
 <td>            
                 <div><font size="4"><b>PARF: Primitive-Aware Radiance Fusion for Indoor Scene Novel View Synthesis</b>  </font></div>
-		<span><font size="3"><b>Haiyang Ying</b>, Baowei Jiang, Jinzhi Zhang, Di Xu, Tao Yu<sup>&dagger;</sup>, Qionghai Dai, Fu Fang<sup>&dagger;</sup></font></span>
+		<span><font size="3"><b>Haiyang Ying</b>, Baowei Jiang, Jinzhi Zhang, Di Xu, Tao Yu<sup>&dagger;</sup>, Qionghai Dai, Lu Fang<sup>&dagger;</sup></font></span>
 		<div><span><font size="3">(ICCV 2023) The International Conference on Computer Vision 2023</font></span> </div>
                 <div> 
 			[<a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Ying_PARF_Primitive-Aware_Radiance_Fusion_for_Indoor_Scene_Novel_View_Synthesis_ICCV_2023_paper.pdf">Paper</a>]
@@ -102,7 +102,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 <td valign="top"> <img src="../images/parsemvs.png" alt="Drawing" style="width: 335px;"/> </td>
 <td>            
                 <div><font size="4"><b>ParseMVS: Learning Primitive-aware Surface Representations for Sparse Multi-view Stereopsis</b>  </font></div>
-		<span><font size="3"><b>Haiyang Ying<sup>&#42;</sup></b>, Jinzhi Zhang<sup>&#42;</sup>, Yuzhe Chen, Zheng Cao, Jing Xiao, Ruqi Huang<sup>&dagger;</sup>, Fu Fang<sup>&dagger;</sup></font></span>
+		<span><font size="3"><b>Haiyang Ying<sup>&#42;</sup></b>, Jinzhi Zhang<sup>&#42;</sup>, Yuzhe Chen, Zheng Cao, Jing Xiao, Ruqi Huang<sup>&dagger;</sup>, Lu Fang<sup>&dagger;</sup></font></span>
 		<div><span><font size="3">The 30th ACM International Conference on Multimedia (ACM MM 2022)</font></span> </div>
                 <div> [<a href="https://doi.org/10.1145/3503161.3547920">Paper</a>][<a href="https://oceanying.github.io">Code</a>] </div>
 </td>
