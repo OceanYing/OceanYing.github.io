@@ -26,7 +26,7 @@ My goal is ***to model, reconstruct, and manipuate the 3D world in a more effici
 ---
 
 # News
-* [May. 2026] I started my internship at Adobe Research, mentored by (Zhiqin Chen)[https://czq142857.github.io/]! 
+* [May. 2026] I started my internship at Adobe Research, mentored by [Zhiqin Chen](https://czq142857.github.io/)! 
 * [Feb. 2026] Our paper [**SpeeDe3DGS**](https://arxiv.org/abs/2506.07917) is accepted to **CVPR 2026**! Check our [**code**](https://speede3dgs.github.io) for super-fast 4DGS!
 * [Jun. 2025] Our paper [**SketchSplat**](https://oceanying.github.io/SketchSplat/) is accepted to **ICCV 2025**! Welcome to try our [**SOTA Solution**](https://github.com/OceanYing/sketchsplat) for 3D edge recon!
 * [Feb. 2024] Our paper [**OmniSeg3D**](https://oceanying.github.io/OmniSeg3D/) is accepted to **CVPR 2024** and [**code**](https://github.com/THU-luvision/OmniSeg3D) is available now!
