@@ -12,16 +12,18 @@ redirect_from:
 I'm now a third-year PhD student in computer science at the University of Maryland (College Park), working with [Prof. Matthias Zwicker](https://www.cs.umd.edu/~zwicker/).
 Before that, I got my master's degree in Data Science and Information Technology at TBSI, Tsinghua University(THU), supervised by [Prof. Lu Fang](https://luvision.net) and [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao). Prior to that, I spent wonderful 4 years at Sun Yat-Sen University(SYSU), and obtained my bachelor's degree in 2021. 
 
-**My research interests mainly lie in 3D computer vision**, especially in:
-* 3D Representation: Geometric Primitive based 3D Modeling (such as CAD)
-* 3D Reconstruction: Semantic-aware Reconstruction and Rendering from images and video
-* 3D Understanding: Hierarchical 3D Scene Parsing and Navigation
-<!-- * **3D Scene Generation** -->
+My research interests lie in **3D computer vision and graphics**, with a focus on:
+* 3D Representations: Developing representations that capture the structure and functionality of 3D objects.
+* 3D Generation: Generating functional, editable 3D objects for design and embodied manipulation.
+* 3D Design: Building AI-driven workflows for engineering design and manufacturing.
 
-My goal is ***to model, reconstruct, and manipuate the 3D world in a more efficient and interpretable manner***.
+My long-term goal is to **advance spatial intelligence through modeling, generating, and manipulating the 3D world**.
+
 
 <!-- Collaborations and casual chats are welcomed! -->
 
+---
+**I am looking for research internship positions for Summer 2027, please contact me if you have any opportunities!**
 
 ---
 
